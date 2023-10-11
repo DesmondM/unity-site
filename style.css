@@ -1,0 +1,452 @@
+.html {
+    scroll-behavior: smooth;
+    background-color: #e6e7e8;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #e6e7e8;
+    padding: 0;
+    margin: 0;
+    position: relative; /* Add this line */
+}
+.main {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    /* border: 1px solid #ddd;
+    border-radius: 4px; */
+    margin: 0 100px;
+    /* max-width:1400px; */
+    padding: 10px 20px;
+    width: 100%;
+}
+.topHeader {
+    display: flex;
+    gap: 20px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 10px;
+    height: 200px;
+    position:sticky;
+    top: 0;
+    /* justify-content: space-between; */
+    background: rgba(230,231,232,0.95);
+    /* border: 1px solid #ddd; */
+    /* border-radius: 4px; */
+    margin: 0 auto;
+    margin-bottom: 100;
+    /* max-width:1400px; */
+    width: 100%;
+}
+
+/* .topHeader li{
+    list-style: none;
+    padding-right: 50px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 14pt;
+    font-weight: 600;
+    color: #7a858f;
+    &:hover v{
+        color: #000;
+        font-weight: 600;
+    }
+  
+} */
+
+/* a{
+    text-decoration: none;
+    color: #7a858f;
+    &:hover{
+        color: #000;
+        font-weight: 600;
+    };
+    &:active{
+        color: #000;
+        font-weight: 600;
+    }
+} */
+
+/* Style for the navigation menu */
+.topHeader nav  ul {
+    list-style: none;
+    padding-right: 50px;
+    /* display: inline-block; */
+    cursor: pointer;
+    padding: 2px;
+    font-size: 14pt;
+    font-weight: 600;
+    padding: 0;
+}
+
+.topHeader nav li {
+    /* display: inline; */
+    margin-right: 20px;
+}
+
+/* Style for unvisited links */
+.topHeader nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal; /* Set the default font weight */
+}
+
+/* Style for visited links */
+nav a:visited {
+    font-weight: bold; /* Make visited links bold */
+}
+
+
+.button{
+    background-color:#333852 ;
+    /* border: 1px solid #fff; */
+    margin-top: 20px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Myriad Pro Regular', sans-serif;
+    font-size: 14pt;
+    line-height: 1.6;
+    color: #fff;
+    /* padding: 30px;
+    border-radius: 4px; */
+    cursor: pointer;
+    &:hover{
+        background-color: #000;
+        color: #fff;
+    }
+}
+
+.heading{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comfortaa', sans-serif;
+    color: #333842;
+   
+
+    gap: 20px;
+    font-size: 36pt;
+    line-height: 1.3;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    margin: 0 10px 10px;
+    max-width:1400px;
+    /* padding: 10px 20px; */
+    width: 80%;
+}
+
+.subheading {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Myriad Pro', sans-serif;
+    color: #333842;
+    margin-top: 0;
+    /* gap: 20px; */
+    font-weight: 300;
+    /* height: 200px; */
+    font-size: 20pt;
+    line-height: 1.3;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    margin: 0 10px 10px;
+    max-width:1400px;
+    /* padding: 10px 20px; */
+    width: 80%;
+}
+
+.para{
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 95%;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 10pt;
+    line-height: 1.8;
+    color: #7a858f;
+    padding: 20px 20px 20px 20px;
+    margin: 0 10px 10px;
+}
+.para-2{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 10pt;
+    line-height: 1.8;
+    color: #000000;
+    padding: 30px;
+}
+
+.listed{
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 100%;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 10pt;
+    line-height: 1.8;
+    color: #7a858f;
+    padding: 30px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.cards div{
+    color: #ffffff;
+}
+
+.cardItem{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 200px;
+    justify-content: space-between;
+    /* background-color: #fff; */
+    border: 2px solid #fff;
+    /* border-radius: 4px; */
+    margin: 0 auto;
+    max-width:1400px;
+    padding: 10px 20px;
+    width: 100%;
+    &:hover{
+        background-color: #ddd;
+        border: 2px solid #ddd;
+    }
+}
+.cardItem_logos{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    height: 200px;
+    justify-content: space-between;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    /* border-radius: 4px; */
+    margin: 0 auto;
+    max-width:1400px;
+    padding: 10px 20px;
+    width: 100%;
+   
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+p{
+    font-family: 'Comfortaa', sans-serif;
+    /* margin: 5px 0; */
+    margin-top: 30px;
+    text-align: left;
+    color: #7a858f;
+    
+}
+
+p span{
+    font-family: 'Comfortaa', sans-serif;
+    /* margin: 5px 0; */
+    text-align: center;
+    color: #333842;
+    margin:   auto;
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+
+footer {
+    background-color: #ffffff; /* Set background color for the footer */
+    color: #fff; /* Set text color for the footer */
+    text-align: center; /* Center-align the content in the footer */
+    padding:0 0; /* Add some padding to the top and bottom of the footer */
+}
+
+/* Create the multicolored line using a linear gradient */
+footer::before {
+    content: "";
+    display: block;
+    margin:auto;
+    width:100%;
+    height: 5px; /* Adjust the height of the line as needed */
+    background: linear-gradient(to right, #FFA61F 0%, #FFA61F 17%,  #FF5924 17%, #FF5924 34%, #FF0000 34%, #FF0000 51%, #6E2463 51%, #6E2463 68%,#4798ED 68%, #4798ED 85%, #59B563 85%, #59B563 100% );
+}
+
+.gradient {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #ff0000 0%, #ff0000 33%, #FF5924 33%, #FF5924 66%, #0000ff 66%, #0000ff 100%);
+  }
+  
+  .curved{
+    background: #ddd;
+    color: #fff;
+    text-align: center;
+  }
+  .curved h1 {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+  .curved p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+
+  .curved svg {
+   display: block;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+}
+  .wave-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+  .footer-menu {
+    position: absolute;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 50px;
+    padding-right:100px ;
+    width: 100%;
+    z-index: 5;
+}
+  .footer-menu2 {
+     
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 30px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12px;
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-right:100px ;
+    width: 100%;
+    
+}
+
+.footer-menu div{
+    display: flex;
+    gap: 20px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+    &:hover{
+        color: #000;
+        font-weight: 680;
+    }
+}
+
+/* .logo-slider {
+    width: 100%;
+    background-color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 30s linear infinite;
+} */
+
+.logo-animation{
+    width: 100px;
+    height: 100px;
+    animation: scroll 60s linear infinite;
+}
+/* img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 60s linear infinite;
+  } */
+  
+  .slide-track {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+  
+  .slider {
+    margin-top: 70px;
+    background-color: whitesmoke;
+    padding: 8em 0em;
+  }
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
+
+
+
+.logo {
+    display: inline-block;
+    padding: 10px;
+    width: 100px;
+}
+
+.logo img {
+    max-width: 100%;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#hold_logos {
+    height: 200px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+  }
+  
+  /* .logo {
+      position: absolute;
+      cursor: pointer;
+      width: 140px;
+      border-radius: 4px;
+      animation: marquee 10s linear infinite;
+  } */
+  
+  /* @keyframes marquee {
+      0% {
+          transform: translateX(1400px);
+     }
+      100% {
+          transform: translateX(-200px);
+     }
+  } */
