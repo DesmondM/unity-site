@@ -31,7 +31,7 @@ body {
 }
 .topHeader {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
     font-family: 'Myriad Pro', sans-serif;
     font-size: 10px;
@@ -170,6 +170,36 @@ nav a:visited {
     max-width:1400px;
     /* padding: 10px 20px; */
     width: 80%;
+}
+
+.flexSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 10pt;
+    line-height: 1.8;
+    color: #7a858f;
+    padding: 30px;
+    margin: 0 10px 10px;
+    /* max-width:1400px; */
+    width: 80%;
+}
+
+.platformCards {
+     background-color: #d7dadd;
+     height: 50px;
+     width: 100%;
+     padding: 40px;
+     font-family: 'Comfortaa', sans-serif;
+     color: #333842;
+     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+     font-size: 40px;
+     text-transform: uppercase;
+    font-weight: 600;
+
 }
 
 .para{
