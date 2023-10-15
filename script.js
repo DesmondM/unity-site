@@ -9,7 +9,7 @@ function moveLogos() {
 
     // Calculate the total width of all logos
     const logosWidth = Array.from(logos).reduce((total, logo) => {
-        return total + logo.clientWidth;
+        return total + 30;
     }, 0);
 
     // Calculate the distance to move
