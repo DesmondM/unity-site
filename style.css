@@ -136,6 +136,7 @@ nav a:visited {
     display: flex;
     flex-direction: column;
     font-family: 'Comfortaa', sans-serif;
+    letter-spacing: 10px;
     color: #333842;
    
 
@@ -180,7 +181,7 @@ nav a:visited {
     text-align: center;
     gap: 20px;
     font-family: 'Myriad Pro', sans-serif;
-    font-size: 10pt;
+    font-size: 12pt;
     line-height: 1.8;
     color: #7a858f;
     
@@ -195,7 +196,7 @@ nav a:visited {
     text-align: center;
     gap: 20px;
     font-family: 'Myriad Pro', sans-serif;
-    font-size: 10pt;
+    font-size: 12pt;
     line-height: 1.8;
     color: #7a858f;
     padding: 8%;
@@ -246,18 +247,20 @@ nav a:visited {
     border: 1px solid #fff;
     width: 95%;
     font-family: 'Myriad Pro', sans-serif;
-    font-size: 10pt;
+    font-size: 12pt;
     line-height: 1.8;
     color: #7a858f;
     padding: 20px 20px 20px 20px;
     margin: 0 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px;
 }
 .para-2{
     font-family: 'Myriad Pro', sans-serif;
-    font-size: 10pt;
+    font-size: 12pt;
     line-height: 1.8;
     color: #000000;
     padding: 30px;
+    
 }
 
 hr{
@@ -273,7 +276,7 @@ hr{
     border: 1px solid #fff;
     width: 100%;
     font-family: 'Myriad Pro', sans-serif;
-    font-size: 10pt;
+    font-size: 12pt;
     line-height: 1.8;
     color: #7a858f;
     padding: 30px;
@@ -300,6 +303,7 @@ hr{
     border: 2px solid #fff;
     /* border-radius: 4px; */
     margin: 0 auto;
+    color:#000000
     max-width:1400px;
     padding: 10px 20px;
     width: 100%;
@@ -360,7 +364,7 @@ p span{
     text-align: center;
     color: #333842;
     margin:   auto;
-    font-size: 20pt;
+    font-size: 30pt;
     font-weight: 600;
 }
 
@@ -554,3 +558,5 @@ footer::before {
   #formTextarea{
     width: 100%;
   }
+
+ 
