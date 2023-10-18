@@ -1,108 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= stylesheet href="style.css">
+    <link rel=stylesheet href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.getElementById("menuIcon");
+            const menu = document.getElementById("menu");
+            const footerMenu = document.querySelector('.footer-menu');
 
+            menuIcon.addEventListener("click", function () {
+                menu.classList.toggle("active");
+                footerMenu.classList.toggle('show')
+            });
+        });
+
+    </script>
     <title>Home Page</title>
 </head>
+
 <body style="background-color: #e6e7e8; padding: 0; margin: 0;">
     <header class="topHeader">
-        <div style="width: 35%; margin-left: 80px;">
-        <img src="comunityLogo.png" alt="logo" width="250">
-    </div>
-    <div style="margin-top: 20px;">
-        <nav>
-        <ul>
-            <li>Home</li>
-            <li><a href="business.html" >Business  </a></li>
-            <li><a href="technical.html" >Technical</a></li>
-            <li><a href="why_us.html" >Why Us</a></li>
-            <li><a href="get_started.html">Get Started</a></li>
-            <li><a href="technical.html" ><img src="magnifying-glass-50.svg" width="18"/> Search</a></li>
-        </ul>
-    </nav>
-    </div>
-    
+        <div class="menu" style="width: 35%; margin-left: 80px;">
+            <img src="comunityLogo.png" alt="logo" width="250">
+        </div>
+        <div style="margin-top: 20px;">
+            <nav>
+                <div class="menu-icon" id="menuIcon">
+                    <div style="flex-grow: 7; margin-left: 100px;"><img src="comunityLogo.png" alt="logo" width="150">
+                    </div>
+                    <div style="flex-grow: 1; margin-top: 15px;"><img src="magnifying-glass-50.svg" width="20" /><span
+                            style="margin-left: 20px; margin-bottom:30px">GET STARTED</span> </div>
+                    <div style="flex-grow: 1; margin-top: 10px; margin-right: 20px;"> &#9776; </div>
+
+                </div>
+                <ul class="menu" id="menu">
+                    <li>Home</li>
+
+                    <li><a href="business.html">Business </a></li>
+                    <li><a href="technical.html">Technical</a></li>
+                    <li><a href="why_us.html">Why Us</a></li>
+                    <li><a href="get_started.html"><img src="magnifying-glass-50.svg" width="18" /> Get Started</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
     </header>
     <main class="main">
-        <div style="width: 50%; margin-top: 100px;">
+        <div class="main-left">
             <h1 class="heading">THE DIGITAL
-            PLATFORM PARTNER</h1>
+                PLATFORM PARTNER</h1>
             <h2 class="subheading">A platform for building digital organisations</h2>
             <p class="para">Digital platforms are transformative systems that support an ecosystem of end users,
-                clients, suppliers, and digital product developers who collaborate and create value. <br/><br/>
-                Let <b>ComUnity</b> be your digital partner by taking care of the complex platform engineering 
-                layer so you can focus on building out a digital portal that differentiates your organization, 
+                clients, suppliers, and digital product developers who collaborate and create value. <br /><br />
+                Let <b>ComUnity</b> be your digital partner by taking care of the complex platform engineering
+                layer so you can focus on building out a digital portal that differentiates your organization,
                 improves competitiveness and creates business value</p>
             <button class="button">Get Started</button>
         </div>
-        <div class="image" style="width: 50%; margin-left:10px" ><img src="/lineArt5.png" alt="line drawing" width="100%"/></div>
+        <div class="sectionOne-image"><img src="/lineArt5.png" alt="line drawing" width="100%" /></div>
     </main>
-<div style="background-image: url('./pebbles1.png'); background-size: cover; height: 510px; ">
-    <div style="display: flex; gap: 1px; flex-direction: column; justify-content: center; margin: auto; width: 80%;">
-    <div class="flexSection" style="margin-top: 7%; width: 100%; letter-spacing: 10px;">
-        <div class="platformCards" style="font-size: 60px; padding: 30px; margin: auto; background-color: #e6e7e8; letter-spacing: 10px;">Platform</div>
+    <div style="background-image: url('./pebbles1.png'); background-size: cover; height: 510px; ">
+        <div
+            style="display: flex; gap: 1px; flex-direction: column; justify-content: center; margin: auto; width: 80%;">
+
+
+            <div class="flip-container">
+                <div class="flip-card">
+                    <div class="flip-front">
+                        <!-- Front content goes here -->
+                        <div class="flexSection" style="margin-top: 7%; width: 100%; letter-spacing: 10px;">
+                            <div class="platformCardsFirst">
+                                Platform</div>
+                        </div>
+
+                    </div>
+                    <div class="flip-back">
+                        <!-- Back content goes here -->
+                        <div class="flexSection" style="margin-top: 7%; width: 100%; letter-spacing: 10px;">
+                            <div class="platformCards"
+                                style="font-size: 40px; padding: 30px; margin: auto; background-color: #d7dadd; letter-spacing: 10px;">
+                                All the info about the Platform</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="flexSection" style="margin-top: 7%; width: 100%; letter-spacing: 10px;">
+                <div class="platformCards"
+                    style="font-size: 60px; padding: 30px; margin: auto; background-color: #e6e7e8; letter-spacing: 10px;">
+                    Platform</div>
+            </div> -->
+            <div class="flexSection"
+                style="width: 20%; margin-top: 2%; flex-direction: row; letter-spacing: 6px; display: flex; ">
+                <div class="platformCards" style="background-color: #e6e7e8; font-size: 2vw; flex-shrink: 1;">Strategy</div>
+                <div class="platformCards" style="background-color: #e6e7e8; font-size: 2vw; flex-shrink: 1;">Design</div>
+                <div class="platformCards" style="background-color: #e6e7e8; font-size: 2vw; flex-shrink: 1;">Business</div>
+                <div class="platformCards" style="background-color: #e6e7e8; font-size: 2vw; flex-shrink: 1;">Operations</div>
+            </div>
+
+        </div>
     </div>
-    <div class="flexSection" style=" width: 100%; letter-spacing: 6px; " >
-          <div class="platformCards" style="background-color: #e6e7e8;font-size: 2vw; " >Strategy</div>
-        <div class="platformCards" style="background-color: #e6e7e8; font-size: 2vw;" >Design</div>
-        <div class="platformCards" style="background-color: #e6e7e8; font-size: 2vw;">Business</div>
-        <div class="platformCards" style="background-color: #e6e7e8; font-size: 2vw;">Operations</div>
-    </div>
-    </div>
-</div>
-  
-    <footer>  
-      </footer>
+
+    <footer>
+    </footer>
 
     <div class="section_two" style="margin-top: 50px;">
 
-  <div class="main">
-    <div style="width: 50%"><h1 class="heading">PLATFORM
-        ENGINEERING</h1>
-    <h2 class="subheading">Accelerating application delivery and business value</h2>
+        <div class="main">
+            <div class="main-left">
+                <h1 class="heading">PLATFORM
+                    ENGINEERING</h1>
+                <h2 class="subheading">Accelerating application delivery and business value</h2>
+            </div>
+
+            <div class="main-left">
+                <p class="para">Platform engineering is a technology approach that accelerates
+                    the delivery of applications and the speed at which they produce
+                    business value. It improves the developers’ experience and
+                    productivity by providing self-service capabilities with
+                    automated infrastructure operations. <br /><br />
+                    The main goal is to provide a consistent, reliable, and scalable
+                    foundation that simplifies and accelerates the development
+                    and operation of applications and services.</p>
+                <button class="button" style="float: right; margin-right: 0px;">Read more</button>
+            </div>
+
+        </div>
+
+
+        <div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 50px;">
+            <img src="/weaving3.png" alt="line drawing" width="40%" />
+        </div>
     </div>
-
-    <div style="width: 50%" > <p class="para">Platform engineering is a technology approach that accelerates 
-        the delivery of applications and the speed at which they produce 
-        business value. It improves the developers’ experience and
-        productivity by providing self-service capabilities with
-        automated infrastructure operations. <br/><br/>
-        The main goal is to provide a consistent, reliable, and scalable 
-        foundation that simplifies and accelerates the development
-        and operation of applications and services.</p>
-    <button class="button" style="float: right; margin-right: 0px;">Read more</button>
-</div>
-
- </div>
-
-
- <div style="display: flex; justify-content: center; margin-top: 10px; margin-bottom: 50px;">
-    <img src="/weaving3.png" alt="line drawing" width="40%" />
-  </div> 
-</div>
-   <footer></footer>
-   <div class="main">
-    <div style="width: 60%;">
-        <h1 class="heading" style="margin-top:50px;">WHAT MAKES US 
-            DIFFERENT</h1>
+    <footer></footer>
+    <div class="main">
+        <div class="main-left">
+            <h1 class="heading" style="margin-top:50px;">WHAT MAKES US
+                DIFFERENT</h1>
             <button class="button">Learn more</button>
+        </div>
+        <div style="width: 40%;">
+            <div class="image"><img src="/lineArt3.png" alt="line drawing" width="60%" /></div>
+        </div>
+
+
     </div>
-    <div style="width: 40%;">
-        <div class="image"><img src="/lineArt3.png" alt="line drawing" width="60%"/></div>
-    </div>
-    
-   
-</div>
-<!-- <footer>  
+    <!-- <footer>  
 </footer> -->
 
 
 
-<!-- <div style="background-color: #fff;">
+    <!-- <div style="background-color: #fff;">
 <div class="logo-slider">
     <div class="logo"><img src="partner1.png" alt="Logo 1"></div>
     <div class="logo"><img src="partner2.png" alt="Logo 2"></div>
@@ -115,152 +170,204 @@
 </div> -->
 
 
-</div>
+    </div>
 
 
 
 
 
-<div class="cards">
-    <div class="cardItem" ><p style="margin: auto;"><span>Cost</span></p><div style="margin: 0 auto;"><img src="/star.svg" width="30px"/></div><p style="margin: auto; font-size: 26px; color: black;">Pay-as-you-succeed</p></div>
-    <div class="cardItem"><p style="margin: auto;"><span>Agility</span></p><div style="margin: 0 auto;"><img src="/star.svg" width="30px"/></div><p style="margin: auto; font-size: 26px; color: black;">Buy vs. Build</p></div>
-    <div class="cardItem"><p style="margin: auto;"><span>Reach</span></p><div style="margin: 0 auto;"><img src="/star.svg" width="30px"/></div><p style="margin: auto; font-size: 26px; color: black;">Microsoft Affiliation</p></div>
-    
-</div>
-<div class="cards">
-       <div class="cardItem"><p style="margin: auto;"><span>Manageability</span></p><div style="margin: 0 auto;"><img src="/star.svg" width="30px"/></div><p style="margin: auto; font-size: 26px; color: black;">Platform. People. Process</p></div>
-         <div class="cardItem"><p style="margin: auto;"><span>Security</span></p><div style="margin: 0 auto;"><img src="/star.svg" width="30px"/></div><p style="margin: auto; font-size: 26px; color: black;">De-risks the journey</p></div>
-            <div class="cardItem"><p style="margin: auto;"><span>Speed</span></p><div style="margin: 0 auto;"><img src="/star.svg" width="30px"/></div><p style="margin: auto;font-size: 26px; color: black;">Instant Scalability</p></div>
-</div>
+    <div class="cards">
 
-<div style="background-image: url('./pebbles2.png'); background-size: cover; height: 510px; ">
-    
-    <div class="flexSection2">
-          <div class="platformCards2">78 
-            <div style=" border: none;
+        <div class="item">
+            <div class="cardItem">
+                <p style="margin: auto;"><span>Cost</span></p>
+                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
+                <p class="cardItemCopy">Pay-as-you-succeed</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="cardItem">
+                <p style="margin: auto;"><span>Agility</span></p>
+                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
+                <p class="cardItemCopy">Buy vs. Build</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="cardItem">
+                <p style="margin: auto;"><span>Reach</span></p>
+                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
+                <p class="cardItemCopy">Microsoft Affiliation</p>
+            </div>
+        </div>
+
+
+        <div class="item">
+            <div class="cardItem">
+                <p style="margin: auto;"><span>Manageability</span></p>
+                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
+                <p class="cardItemCopy">Platform. People. Process</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="cardItem">
+                <p style="margin: auto;"><span>Security</span></p>
+                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
+                <p class="cardItemCopy">De-risks the journey</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="cardItem">
+                <p style="margin: auto;"><span>Speed</span></p>
+                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
+                <p class="cardItemCopy">Instant Scalability</p>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <div class="sectionTwo">
+
+        <div class="flexSection2">
+            <div class="platformCards2">78
+                <div style=" border: none;
              height: 3px;
              width: 200px;
              background-color: #ffffff;
              margin: auto;
              margin-bottom: 20px;"> </div>
-            
-            <p> Combined years 
-            building platforms</p></div>
-        <div class="platformCards2">108 
-            <div style=" border: none;
+
+                <p> Combined years
+                    building platforms</p>
+            </div>
+            <div class="platformCards2">108
+                <div style=" border: none;
              height: 3px;
              width: 270px;
              background-color: #ffffff;
              margin: auto;
              margin-bottom: 20px;"> </div>
-            <p> Combined years 
-            in the ICT sector</p></div>
-        
+                <p> Combined years
+                    in the ICT sector</p>
+            </div>
+
+        </div>
     </div>
     </div>
-</div>
 
-<!-- <marquee><footer></footer></marquee> -->
-<div class="slider">
-    <div class="slide-track">
-      <div class="slide" >
-       <div class="logo-animation"> <img src="partner1.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner2.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner3.png" alt="" width="70"></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner4.png" alt="" ></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner5.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner6.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner7.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner8.png" alt=""></div>
-      </div>
-      <div class="slide" >
-       <div class="logo-animation"> <img src="partner9.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner10.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner11.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner12.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner13.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner14.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner15.png" alt=""></div>
-      </div>
-      <div class="slide">
-        <div class="logo-animation">  <img src="partner16.png" alt=""></div>
-      </div>
-      <div class="slide" >
-        <div class="logo-animation"> <img src="partner17.png" alt=""></div>
-       </div>
-       <div class="slide" >
-        <div class="logo-animation"> <img src="partner18.png" alt=""></div>
-       </div>
-       <div class="slide">
-         <div class="logo-animation">  <img src="partner19.png" alt=""></div>
-       </div>
-       <div class="slide">
-         <div class="logo-animation">  <img src="partner20.png" alt=""></div>
-       </div>
-       <div class="slide">
-         <div class="logo-animation">  <img src="partner21.png" alt=""></div>
-       </div>
-       <div class="slide">
-         <div class="logo-animation">  <img src="partner22.png" alt=""></div>
-       </div>
-       <div class="slide">
-         <div class="logo-animation">  <img src="partner23.png" alt=""></div>
-       </div>
-       <div class="slide">
-         <div class="logo-animation">  <img src="partner24.png" alt=""></div>
-       </div>
-    
+    <!-- <marquee><footer></footer></marquee> -->
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner1.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner2.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner3.png" alt="" width="70"></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner4.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner5.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner6.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner7.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner8.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner9.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner10.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner11.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner12.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner13.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner14.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner15.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner16.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner17.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner18.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner19.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner20.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner21.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner22.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner23.png" alt=""></div>
+            </div>
+            <div class="slide">
+                <div class="logo-animation"> <img src="partner24.png" alt=""></div>
+            </div>
+
+        </div>
     </div>
-  </div>
 
 
 
-<div class="footer-menu">
-    <img src="./comunityLogo.png" width="200"/>
-    <div style="width: 5%;"></div>
+    <div class="footer-menu">
+        <img src="./comunityLogo.png" width="200" />
+        <div style="width: 5%;"></div>
 
-    <div>Terms of use</div>
-    <div>Privacy</div>
-    <div>Legal</div>
-    <div>Pricing</div>
-    <div>Licence Terms</div>
-    <div>Contact</div>
-    <div></div>
-    <div></div>
-    <div style="width: 5%;"></div>
-    <div><img src="/linkedin.svg" width="20"/></div>
-    <div><img src="/facebook.svg" width="20"/></div>
-    <!-- <div><img src="/email.svg" width="20"/></div> -->
-    <div></div>
-</div>
-<footer></footer>
-<script src="script.js"></script>
+        <div>Terms of use</div>
+        <div><a href="privacy.html">Privacy</a></div>
+        <div><a href="legal.html"> Legal</a></div>
+        <div>Pricing</div>
+        <div>Licence Terms</div>
+        <div>Contact</div>
+        <div></div>
+        <div></div>
+        <div style="width: 5%;"></div>
+        <div><img src="/linkedin.svg" width="20" /></div>
+        <div><img src="/facebook.svg" width="20" /></div>
+        <!-- <div><img src="/email.svg" width="20"/></div> -->
+        <div></div>
+    </div>
+    <footer></footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
