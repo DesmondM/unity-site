@@ -1,15 +1,20 @@
+// Select the logo slider element
 const logoSlider = document.querySelector('.logo-slider');
+
+// Select all logos
 const logos = document.querySelectorAll('.logo');
 
+// Define a variable to store the current index
 let currentIndex = 0;
 
+// Define a function to move the logos
 function moveLogos() {
     // Calculate the total width of the logos container
     const containerWidth = logoSlider.clientWidth;
 
     // Calculate the total width of all logos
     const logosWidth = Array.from(logos).reduce((total, logo) => {
-        return total + 30;
+        return total + 100;
     }, 0);
 
     // Calculate the distance to move
