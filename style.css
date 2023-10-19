@@ -182,6 +182,21 @@ nav a:visited {
     /* max-width:1400px; */
     width: 80%;
 }
+.fourCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 5px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12pt;
+    line-height: 1.8;
+    color: #7a858f;
+    width: 80%;
+    margin-top: 2%; 
+    letter-spacing: 3px; 
+   
+}
 .flexSection2{
     display: flex;
     flex-direction: row;
@@ -198,9 +213,23 @@ nav a:visited {
     
 }
 
+.fourCardsItem {
+     padding: 40px;
+     font-family: 'Comfortaa', sans-serif;
+     color: #333842;
+     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+     
+     text-transform: uppercase;
+    font-weight: 600;
+
+    background-color: #e6e7e8; 
+    font-size: 2vw; 
+    flex-shrink: 1;
+
+}
 .platformCards {
      background-color: #d7dadd;
-     width: 100%;
+     /* width: 100%; */
      padding: 40px;
      font-family: 'Comfortaa', sans-serif;
      color: #333842;
@@ -228,7 +257,7 @@ nav a:visited {
 .platformCards2 {
      background-color: #d7dadd;
      height: 200px;
-     width: 300px;
+     /* width: 300px; */
      padding: 40px;
      font-family: 'Comfortaa', sans-serif;
      color: #fff;
@@ -253,7 +282,7 @@ nav a:visited {
 .para{
     background-color: #fff;
     border: 1px solid #fff;
-    width: 95%;
+    /* width: 95%; */
     font-family: 'Myriad Pro', sans-serif;
     font-size: 12pt;
     line-height: 1.8;
@@ -315,7 +344,7 @@ hr{
     border: 2px solid #fff;
     /* border-radius: 4px; */
     margin: 0 auto;
-    color:#000000
+    color:#000000;
     max-width:1400px;
     padding: 10px 20px;
     width: 100%;
@@ -532,6 +561,8 @@ footer::before {
  
 .flip-container {
     perspective: 1000px;
+    width: 90%;
+    margin: auto;
 }
 
 .flip-card {
@@ -585,6 +616,12 @@ footer::before {
     height: 510px;
 }
 
+.makesUsDifferent{
+    display: flex; 
+    flex-direction: row; 
+    gap: 10;
+}
+
 
 @media (max-width: 768px) {
     .menu {
@@ -603,7 +640,7 @@ footer::before {
 
     .menu.active {
         display: block;
-        max-width: 768px;
+        max-width: 100%;
         width: auto;
         background-color: #d7dadd;
         color: #000000;
@@ -611,11 +648,26 @@ footer::before {
         font-size: 10pt;
         padding: 30px;
         z-index: 10;
-        &:hover{
-            color: white;
-        }
-    }
-
+        position: relative;
+        transform: translateY(-70px); /* Move the block 30px up */
+      }
+      
+      .menu.active::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        padding: 0;
+        left: 0;
+        width: 100%;
+        height: 6px; /* Adjust the height of your gradient border */
+        background: linear-gradient(to right, #FFA61F 0%, #FFA61F 17%, #FF5924 17%, #FF5924 34%, #FF0000 34%, #FF0000 51%, #6E2463 51%, #6E2463 68%, #4798ED 68%, #4798ED 85%, #59B563 85%, #59B563 100%);
+      }
+      
+      .menu.active:hover {
+        color: white;
+      }
+      
+      
     .topHeader nav  ul{
         display: none;
     }
@@ -681,7 +733,7 @@ footer::before {
         letter-spacing: 1px;
     }
     .svgStyle{
-        width: 200px;
+        width: 150px;
         margin-top: 12px;
     }
 }
@@ -709,6 +761,7 @@ footer::before {
 
     .menu.active {
         display: block;
+        max-width: 100%;
         width: auto;
         background-color: #d7dadd; /* Change to a readable background color */
         color: #000000;
@@ -736,7 +789,7 @@ footer::before {
 
     .main-left {
         width: 100%;
-        margin-top: 2px;
+        margin: 0;
         padding: 0;
     }
 
@@ -765,6 +818,8 @@ footer::before {
 
     .item {
         flex: 0 0 calc(50% - 20px);
+        min-width: 50%;
+        width: auto;
     }
 
     p span {
@@ -785,6 +840,7 @@ footer::before {
 
     .footer-menu {
         flex-direction: column;
+        margin: auto;
     }
 
     .platformCards {
@@ -808,5 +864,33 @@ footer::before {
     .svgStyle {
         width: 150px;
         margin-top: 12px;
+    }
+    .para{
+        margin: 0;
+    }
+    .makesUsDifferent{
+        flex-direction: row;
+    }
+    .cardItem{
+        padding: 0;
+    }
+    .cardItemCopy{
+        margin: 5px auto;
+    }
+    .cards{
+        width: 80%;
+        margin: auto;
+        gap: 0;
+    }
+    .fourCards{
+        margin: auto;
+        flex-direction: column;
+        width: 100%;
+       
+       
+    }
+    .fourCardsItem{
+        font-size: 18pt;
+        padding: 5px;
     }
 }
