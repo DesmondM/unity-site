@@ -194,6 +194,21 @@ nav a:visited {
     /* max-width:1400px; */
     width: 80%;
 }
+.oneCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 2px;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12pt;
+    line-height: 1.8;
+    color: #7a858f;
+    width: 100%;
+    margin: 30px auto; 
+    letter-spacing: 3px; 
+   
+}
 .fourCards{
     display: flex;
     flex-direction: row;
@@ -225,6 +240,23 @@ nav a:visited {
     
 }
 
+.oneCardItem {
+     padding: 40px;
+     font-family: 'Comfortaa', sans-serif;
+     color: #333842;
+     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+     text-transform: uppercase;
+    font-weight: 600;
+    background-color: #e6e7e8; 
+    font-size: 3vw; 
+    flex-shrink: 1;
+
+    width: 100%; 
+    /* font-size: 40pt;  */
+    margin: 20px auto
+
+
+}
 .fourCardsItem {
      padding: 40px;
      font-family: 'Comfortaa', sans-serif;
@@ -256,11 +288,10 @@ nav a:visited {
      font-family: 'Comfortaa', sans-serif;
      color: #333842;
      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-     font-size: 40px;
      text-transform: uppercase;
     font-weight: 600;
     font-size: 60px; 
-    padding: 12px; 
+    padding: 10px; 
     margin: auto; 
     background-color: #e6e7e8; 
     letter-spacing: 10px;
@@ -914,8 +945,14 @@ footer::before {
        
        
     }
+    .oneCardItem{
+    font-size: 26pt;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    }
     .fourCardsItem{
-    font-size: 18pt;
+    font-size: 16pt;
     padding: 10px;
     width: 90%;
     margin: auto;
