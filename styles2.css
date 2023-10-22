@@ -1,0 +1,26 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.logo-container {
+    display: flex;
+    position: relative;
+    animation: scroll 60s linear infinite;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%); /* Start from the right side */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left side */
+    }
+}
