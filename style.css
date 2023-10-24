@@ -380,6 +380,18 @@ hr{
     font-size: 12pt; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
 }
+.getStartedListed{
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12pt;
+    line-height: 1.8;
+    padding: 30px;
+    color: black; 
+    width: 50%; 
+    font-size: 12pt; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
+}
 
 .techNicalListed{
     background-color: #fff;
@@ -604,7 +616,7 @@ footer::before {
   
   .slide-track {
     background-color: #fff;
-    padding-top: 30px;
+    padding: 15px;
     width: 100%;
     display: flex;
     gap: 3em;
@@ -612,7 +624,7 @@ footer::before {
   }
   
   .slider {
-    height: 100px;
+    height: 60px;
     background-color:#fff;
    
   }
@@ -1062,8 +1074,7 @@ footer::before {
         margin: 0;
     }
     .listed{
-        width: 100%;
-        padding: 5px;
+        width: 87%;
         padding-left: 15px;
         margin: 0;
     }
@@ -1079,6 +1090,7 @@ footer::before {
     .cardItemWhyUs{
         flex-direction: column;
         width: 80%; 
+        margin: 0;
     }
     .getStartedContainer{
         flex-direction: column; 
@@ -1087,22 +1099,24 @@ footer::before {
     }
     #formInput {
     width: 95%;
-    margin: 2%;
+    
 }
    .technicalPageBody{
     flex-direction: column;
     width: 100%;
    }
    .techNicalListed{
-    width: 100%;
+    width: 84%;
    }
    .technicalPagePara{
     width: 100%;
    }
    .brain{
     float: center; 
-    width: 70%;
-    margin: 10px; 
-    
+    width: 80%;
+    margin: 5px;  
 }
+   .getStartedListed{
+    width: 85%;
+   }
 }
