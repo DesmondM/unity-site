@@ -64,8 +64,9 @@ body {
 }
 
 #formInput {
-    width: 95%;
-    margin: 2%;
+    width: 100%;
+    margin: 0;
+    height: 25px;
 }
 
 /* Style for the navigation menu */
@@ -335,7 +336,7 @@ nav a:visited {
     line-height: 1.8;
     color: #7a858f;
     padding: 20px 20px 20px 20px;
-    margin: 0 10px 10px;
+    /* margin: 0 10px 10px; */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px;
 }
 .para-2{
@@ -348,6 +349,15 @@ nav a:visited {
     padding-right: 20px; 
    
     
+}
+.technicalPagePara{
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12pt;
+    line-height: 1.8;
+    color: #000000;
+    width: 50%; 
+    padding: 0; 
+    padding-right: 20px; 
 }
 
 hr{
@@ -367,6 +377,19 @@ hr{
     padding: 30px;
     color: black; 
     width: 50%; 
+    font-size: 12pt; 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
+}
+
+.techNicalListed{
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 12pt;
+    line-height: 1.8;
+    padding: 30px;
+    color: black; 
+    width: 40%; 
     font-size: 12pt; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
 }
@@ -575,7 +598,7 @@ footer::before {
     width: 100px;
     height: auto;
     /* height: 100px; */
-    animation: scroll 48s linear infinite;
+    animation: scroll 20s linear infinite;
 }
 
   
@@ -596,7 +619,7 @@ footer::before {
   
   @keyframes scroll {
     0% {transform: translateX(0);}
-    100% {transform: translatex(-1000%)}
+    100% {transform: translatex(-3450%)}
   }
 
 .logo {
@@ -715,6 +738,19 @@ footer::before {
     margin-bottom: 50px;
     width: 50%;
     z-index: -10;
+}
+.technicalPageBody{
+    display: flex; 
+    width: 100%; 
+    gap: 20px;
+}
+.brain{
+    float: right; 
+    width: 45%;
+    margin: 0px 20px 10px 0; 
+    margin-top: -80px; 
+    margin-right: -20px; 
+    position: relative;
 }
 
 
@@ -1052,5 +1088,21 @@ footer::before {
     #formInput {
     width: 95%;
     margin: 2%;
+}
+   .technicalPageBody{
+    flex-direction: column;
+    width: 100%;
+   }
+   .techNicalListed{
+    width: 100%;
+   }
+   .technicalPagePara{
+    width: 100%;
+   }
+   .brain{
+    float: center; 
+    width: 70%;
+    margin: 10px; 
+    
 }
 }
