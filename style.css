@@ -388,7 +388,7 @@ hr{
     line-height: 1.8;
     padding: 30px;
     color: black; 
-    width: 50%; 
+    width: 100%; 
     font-size: 12pt; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
 }
@@ -921,7 +921,7 @@ footer::before {
 
     .topHeader nav li {
         margin-right: 20px;
-        font-size: 24pt;
+        font-size: 15pt;
         padding: 5px;
     }
 
