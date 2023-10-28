@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel=stylesheet href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuIcon = document.getElementById("menuIcon");
@@ -23,27 +28,36 @@
 </head>
 
 <body >
-    <header class="topHeader">
-          <div class="menu" style="margin-left: 40px; margin-top: 10px;" >
+    <header class="topHeader" style="width: 100%;">
+          <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;" >
             <img src="comunityLogo.png" alt="logo" width="200">
         </div>
 
-        <div style="margin-top: 60px; margin: auto;">
+        <div class="navBarItems">
             <nav>
                 <div class="menu-icon" id="menuIcon" >
-                    <div style="margin-right: 50px;" ><img src="comunityLogo.png" alt="logo" width="130">
+                    <div class="menuItems" ><img src="comunityLogo.png" alt="logo" style="    min-width: 100px;
+                        width: auto;
+                        height: auto;">
                     </div>
-                    <div class="svgStyle"><img src="magnifying-glass-50.svg" width="18" /><span
-                            class="getStarted">GET STARTED</span> </div>
-                    <div style="flex-grow: 1; margin-top: 10px; margin-right: 0;"> &#9776; </div>
+                    <div class="svgStyle" ><img src="magnifying.png" width="16" />
+                        <span class="getStarted" style="flex: 1;">GET STARTED</span> </div>
+                    <div style="flex: 1; margin-top: 10px; margin-right: 0; display: contents;"> &#9776; </div>
 
                 </div>
-                <ul class="menu" id="menu">
-                    <li>Home</li>
-                    <li><a href="business.html">Business </a></li>
-                    <li><a href="technical.html">Technical</a></li>
-                    <li><a href="why_us.html">Why Us</a></li>
-                    <li><a href="get_started.html"><img src="magnifying-glass-50.svg" width="18" /> Get Started</a></li>
+
+                <ul class="menu" id="menu" 
+                style=" justify-content: space-between;" >
+                    <li >Home</li>
+                    <li ><a href="business.html">Business </a></li>
+                    <li ><a href="technical.html">Technical</a></li>
+                    <li ><a href="why_us.html">Why Us</a></li>
+                    <li >
+                        <div style="display: flex; flex-direction: row; gap: 5px;" >
+                        <div><img src="/search.svg" width="22" style="margin-top: 3px;" /></div>
+                        <div style=" margin-top: 2px;"><a href="get_started.html"> Get Started</a></div>
+                        </div>
+                    </li>
                 </ul>
 
             </nav>
@@ -54,10 +68,9 @@
 
 
     <main class="main">
-        <div class="main-left">
-            <h1 class="heading">THE DIGITAL
-                PLATFORM PARTNER</h1>
-            <h2 class="subheading">A platform for building digital organisations</h2>
+        <div class="main-left" >
+            <h1 class="heading">THE DIGITAL PLATFORM PARTNER</h1>
+            <div class="subheading">A platform for building digital organisations</div>
             <p class="para">Digital platforms are transformative systems that support an ecosystem of end users,
                 clients, suppliers, and digital product developers who collaborate and create value. <br /><br />
                 Let <b>ComUnity</b> be your digital partner by taking care of the complex platform engineering
@@ -65,7 +78,7 @@
                 improves competitiveness and creates business value</p>
             <button class="button" style="margin-left: 0;">Get Started</button>
         </div>
-        <div class="sectionOne-image"><img src="/Man-transparent.gif" alt="line drawing" width="100%" /></div>
+        <div class="sectionOne-image" ><img src="/Man-transparent.gif" alt="line drawing" width="100%" style="float: inline-end;"  /></div>
     </main>
 
 
@@ -73,34 +86,15 @@
         <div
             style="display: flex; gap: 1px; flex-direction: column; justify-content: center; margin: auto; width: 80%;"> 
 
-            <!-- <div class="flip-container">
-                <div class="flip-card">
-                    <div class="flip-front">
-                        <div class="flexSection" style="margin-top: 7%; width: 100%; letter-spacing: 10px;">
-                            <div class="platformCardsFirst">
-                                Platform</div>
-                        </div>
-
-                    </div>
-                    <div class="flip-back">
-                        <div class="flexSection" style="margin-top: 7%; width: 100%; letter-spacing: 10px;">
-                            <div class="platformCards"
-                                style="font-size: 40px; padding: 30px; margin: auto; background-color: #d7dadd; letter-spacing: 10px;">
-                                All the info about the Platform</div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>  -->
 
             <div class="oneCard">
-                <div class="oneCardItem">Platform</div>
+                <div class="oneCardItem" style="margin-bottom: 10px;">Platform</div>
             </div>
             <div class="fourCards">
-                <div class="fourCardsItem" >Strategy</div>
-                <div class="fourCardsItem" >Design</div>
-                <div class="fourCardsItem" >Business</div>
-                <div class="fourCardsItem" >Operations</div>
+                <div class="fourCardsItem" style="width: 100%; background-color: var(--tertiary-grey);" >Strategy</div>
+                <div class="fourCardsItem"style="width: 100%;  background-color: var(--tertiary-grey)" >Design</div>
+                <div class="fourCardsItem" style="width: 100%;  background-color: var(--tertiary-grey)" >Business</div>
+                <div class="fourCardsItem" style="width: 100%;  background-color: var(--tertiary-grey)" >Operations</div>
             </div>
 
        
@@ -116,13 +110,22 @@
     <div class="section_two" style="margin-top: 50px;">
 
         <div class="main">
-            <div class="main-left">
+            <div class="main-left3">
                 <h1 class="heading">PLATFORM
                     ENGINEERING</h1>
                 <h2 class="subheading">Accelerating application delivery and business value</h2>
+                <div style="display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30vh;
+        margin: 0; z-index: -1;
+        margin-left: 0px;
+        margin-bottom: 40px ;" >
+            <iframe src="data.html" width="800" height="600" frameborder="0">Image here</iframe>
+        </div>
             </div>
 
-            <div class="main-left">
+            <div class="main-left3" >
                 <p class="para" style="margin-top: 0;">Platform engineering is a technology approach that accelerates
                     the delivery of applications and the speed at which they produce
                     business value. It improves the developers’ experience and
@@ -141,14 +144,7 @@
             <video src="/Hands.mp4" alt="line drawing" width="40%" controls autoplay></video>
             <img src="/Hands.mp4" alt="line drawing" width="40%" />
         </div> -->
-        <div style="display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30vh;
-        margin: 0; z-index: -1;
-        margin-bottom: 40px ;" >
-            <iframe src="data.html" width="800" height="600" frameborder="0">Image here</iframe>
-        </div>
+        
     </div>
     <footer></footer>
     
@@ -174,54 +170,70 @@
 
     </div>
 
-    <div class="cards">
+    <div class="cards" >
 
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto;"><span>Cost</span></p>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>COST</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-                <p class="cardItemCopy">Pay-as-you-succeed</p>
+            
+                <p class="cardItemCopy" >Pay-as-you-succeed</p>
+            </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="cardItem">
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>AGILITY</span>
+                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
+            
+                <p class="cardItemCopy" >Buy vs. Build</p>
+            </p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="cardItem">
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>REACH</span>
+                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
+            
+                <p class="cardItemCopy" >Microsoft Affiliation</p>
+            </p>
             </div>
         </div>
 
+
+      
+
+    </div>
+
+    <!-- Second row of cards -->
+
+    <div class="cards" >
+
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto;"><span>Agility</span></p>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>MANAGEABILITY</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-                <p class="cardItemCopy">Buy vs. Build</p>
+            
+                <p class="cardItemCopy" >Platform. People. Process</p>
+            </p>
             </div>
         </div>
-
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto;"><span>Reach</span></p>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>SECURITY</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-                <p class="cardItemCopy">Microsoft Affiliation</p>
+            
+                <p class="cardItemCopy" >De-risks the journey</p>
+            </p>
             </div>
         </div>
-
-
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto; text-align: center;"><span>Manage-ability</span></p>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>SPEED</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-                <p class="cardItemCopy">Platform. People. Process</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="cardItem">
-                <p style="margin: auto;"><span>Security</span></p>
-                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-                <p class="cardItemCopy">De-risks the journey</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="cardItem">
-                <p style="margin: auto;"><span>Speed</span></p>
-                <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-                <p class="cardItemCopy">Instant Scalability</p>
+            
+                <p class="cardItemCopy" >Instant Scalability</p>
+            </p>
             </div>
         </div>
 
@@ -240,7 +252,7 @@
              margin: auto;
              margin-bottom: 20px;"> </div>
 
-                <p> Combined years
+                <p > Combined years
                     building platforms</p>
             </div>
             <div class="platformCards2">108
@@ -250,7 +262,7 @@
              background-color: #ffffff;
              margin: auto;
              margin-bottom: 20px;"> </div>
-                <p> Combined years
+                <p > Combined years <br /> 
                     in the ICT sector</p>
             </div>
 
@@ -277,9 +289,6 @@
             <div class="slide">
                 <div class="logo-animation"  style="margin-top: 10px;"> <img src="partner5.png" alt="" width=80></div>
             </div>
-            <!-- <div class="slide">
-                <div class="logo-animation"  style="margin-top: 25px;"> <img src="partner6.png" alt="" width=80></div>
-            </div> -->
             <div class="slide">
                 <div class="logo-animation" style="margin-top: 20px;"> <img src="partner7.png" alt="" width=70></div>
             </div>
@@ -379,20 +388,21 @@
 
 
     <div class="footer-menu">
-        <img src="./comunityLogo.png" width="200" />
+        
+        <img src="./comunityLogo.png" width="200" class="mobileImages" />
         <div style="width: 5%;"></div>
 
-        <div>Terms of use</div>
-        <div><a href="privacy.html">Privacy</a></div>
-        <div><a href="legal.html"> Legal</a></div>
-        <div>Pricing</div>
-        <div>Licence Terms</div>
-        <div>Contact</div>
+        <div style="font-size: 14pt;">Terms of use</div>
+        <div style="font-size: 14pt;"><a href="privacy.html" style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
+        <div style="font-size: 14pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);"> Legal</a></div>
+        <div style="font-size: 14pt;">Pricing</div>
+        <div style="font-size: 14pt;">Licence Terms</div>
+        <div style="font-size: 14pt;">Contact</div>
         <div></div>
         <div></div>
         <div style="width: 5%;"></div>
-        <div><img src="/linkedin.svg" width="20" /></div>
-        <div><img src="/facebook.svg" width="20" /></div>
+        <div><a href="https://www.linkedin.com/company/comunity/"><img src="/linkedin.svg" width="20" /></a></div>
+        <div><a href="https://www.facebook.com/ComUnityPlatform"> <img src="/facebook.svg" width="20" /></a></div>
         <div></div>
     </div>
 

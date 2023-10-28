@@ -1,151 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= stylesheet href="style.css">
+    <link rel=stylesheet href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-    <title>Privacy</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.getElementById("menuIcon");
+            const menu = document.getElementById("menu");
+            const footerMenu = document.querySelector('.footer-menu');
+
+            menuIcon.addEventListener("click", function () {
+                menu.classList.toggle("active");
+                footerMenu.classList.toggle('show')
+            });
+        });
+
+    </script>
+    <title>Home Page</title>
 </head>
-<body style="background-color: #e6e7e8; padding: 0; margin: 0;">
-    <header class="topHeader">
-        <div style="width: 35%; margin-left: 80px;">
-        <img src="comunityLogo.png" alt="logo" width="250">
-    </div>
-    <div style="margin-top: 20px;">
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="business.html">Business </a> </li>
-            <li><a href="technical.html">Technical</a></li>
-            <li><a href="why_us.html" >Why Us</a></li>
-            <li><a href="get_started.html" >Get Started</a></li>
-            <li><a href="#" ><img src="magnifying-glass-50.svg" width="18"/> Search</a></li>
-        </ul>
-    </nav>
-    </div>
-    
-    </header>
+
+<body >
+
+    <header class="topHeader" style="width: 100%;">
+        <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;" >
+          <img src="comunityLogo.png" alt="logo" width="200">
+      </div>
+
+      <div class="navBarItems">
+          <nav>
+              <div class="menu-icon" id="menuIcon" >
+                  <div class="menuItems" ><img src="comunityLogo.png" alt="logo" style="    min-width: 100px;
+                      width: auto;
+                      height: auto;">
+                  </div>
+                  <div class="svgStyle" ><img src="magnifying.png" width="16" />
+                      <span class="getStarted" style="flex: 1;">GET STARTED</span> </div>
+                  <div style="flex: 1; margin-top: 10px; margin-right: 0; display: contents;"> &#9776; </div>
+
+              </div>
+
+              <ul class="menu" id="menu" 
+              style=" justify-content: space-between;" >
+                  <li >Home</li>
+                  <li ><a href="business.html">Business </a></li>
+                  <li ><a href="technical.html">Technical</a></li>
+                  <li ><a href="why_us.html">Why Us</a></li>
+                  <li >
+                      <div style="display: flex; flex-direction: row; gap: 5px;" >
+                      <div><img src="/search.svg" width="22" style="margin-top: 3px;" /></div>
+                      <div style=" margin-top: 2px;"><a href="get_started.html"> Get Started</a></div>
+                      </div>
+                  </li>
+              </ul>
+
+          </nav>
+      </div>
+
+  </header>
+
     <main class="main">
         <div style="width: 100%; margin-top: 100px;">
-            <h1 class="heading" style="margin-left: 0;">LEGAL</h1>
+            <h1 class="heading" style="margin-left: 0;">PRIVACY</h1>
              <div >
            
 
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3"> 
                 We are committed to respecting and protecting the privacy of our users. Please read this policy, which outlines ways in which we will protect your privacy.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3" > 
                 Comunity Systems (Pty) Ltd. provides a number of products and services for software development purposes (collectively referred to as the “Services”). By using our Website or by purchasing any of 
                 our Services, you agree to the terms of the following Privacy Policy.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3" > 
                 Protection of your personal data is very important to us, and we follow reasonable industry standards to ensure the proper treatment of personal data in accordance with applicable data protection 
                 laws as amended from time to time. This Privacy Policy will explain to you how and for what purposes we collect, use, retain, disclose, and safeguard the information you provide to us.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; ">     
-                <strong>Personal Data</strong><br/>
+            <p  class="para-3" >     
+                <strong style="letter-spacing: 3px;">Personal Data</strong><br/>
                 Personal data refers to any data (whether by itself or when linked with other information in the possession of, or likely to come into our possession) that can be used to identify a specific living
                 person. Personal data does not include information that has been aggregated or made anonymous such that it can no longer be reasonably associated with a specific person.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; ">     
+            <p  class="para-3" >     
                 
-                <strong>Application of this Policy</strong><br/>
+                <strong  style="letter-spacing: 3px;">Application of this Policy</strong><br/>
                 This Policy applies to our Website and all Services that we offer. This Policy does NOT apply to any website, product or service of any third-party, even if the website links to (or from) our website. We 
                 suggest that you review the privacy practices of any third-party who may be handling your personal data before deciding whether to provide personal information. We are not responsible in any way 
                 for third-party sites or the collection or protection of your personal information on those sites.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; ">       
-                <strong>Collection and Use of Personal Data</strong><br/>
+            <p  class="para-3" >       
+                <strong  style="letter-spacing: 3px;">Collection and Use of Personal Data</strong><br/>
                 Other than through the process of signing up for our Services, we do NOT collect personal data on our Website. We collect personal data from our service providers (which include application developers working on their behalf) when you provide it directly to us by interacting with our Services, but we will only collect personal information that is necessary for us to provide the Services to you. We 
                 do NOT collect personal data from our service providers’ end customers.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; ">     
+            <p  class="para-3" >     
                 To gain full access to some of our Services, you will be required to register for an Comunity-credentialed account. At the time of registration, we may collect various necessary personal data such as 
                 your name, company name, geographical location, email address, and/or telephone number. When you are using our Services, we may collect and/or maintain information regarding your activities. 
                 Any personal data collected will be shared and disclosed as described below (“Sharing and Disclosure of Personal Data”). If you provide personal data to us via use of the Services – for example to create 
                 end user authentication certificates – you consent to our collection and use of personal data as described in this Privacy Policy, and we will not be liable for any damages that result from your failure to 
                 anonymize provided data.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3" > 
                 If you provide personal information from third parties, you are responsible for obtaining the appropriate and necessary consents for provision of such information to us. As a result, we disclaim all liability for claims brought by a data subject arising from any action or omission by us to the extent that such action or omission resulted from your failure by you to obtain necessary consents from your 
                 customers as required by law.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
-                <strong>Cookies and Web Server Logs</strong><br/>
+            <p  class="para-3" > 
+                <strong  style="letter-spacing: 3px;">Cookies and Web Server Logs</strong><br/>
                 “Cookies” are a feature of web browser software that allows web servers to recognize the computer used to access a Website. Cookies can remember what information a computer accessed on one 
                 web page to streamline activities on related web pages and to make the online experience easier and more personalized. Log files are used to monitor, measure, analyse, improve, and troubleshoot 
                 our Services.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3" > 
                 We may utilize cookies and other technologies to collect non-personally-identifiable information from our Website and from other websites that use our services. Information gathered through cookies 
                 and web-server log files may include information such as the date and time of visits, the pages viewed, IP addresses, links to/from any page, and time spent at our site.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3" > 
                 We may use cookie data to measure web traffic and usage activity on our Website for purposes of monitoring, troubleshooting and improving our Website and services, to look for possible fraudulent 
                 activity, and to better understand the sources of traffic and transactions on our Website.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3" > 
                 Cookies also allow our servers to remember your account information for future visits and to provide personalized and streamlined information across related pages on our Website and also across 
                 other websites or applications that use our services. You can choose to disable cookies for our Website but this may limit your ability to use our Website and services.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; ">    
-                <strong>Sharing and Disclosure of your Personal Data</strong><br/>
+            <p  class="para-3" >    
+                <strong  style="letter-spacing: 3px;">Sharing and Disclosure of your Personal Data</strong><br/>
                 Any sharing or disclosure of your personal data will be in compliance with applicable data protection laws and regulations. We may disclose personal data collected about you to trusted third parties for 
                 a variety of purposes in connection with providing our Services. We may also store your personal data in locations outside of our direct control, such as on servers or databases co-located with hosting 
                 providers, and may potentially transfer personal data to servers located in the Europe and the United States or elsewhere in the world.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3 "> 
                 Your personal data may also be disclosed to law enforcement, government officials, or other third parties if required by law or if we believe in good faith that the disclosure is necessary to prevent 
                 physical harm or financial loss, to report suspected illegal activity, or to investigate violations of our Terms of Service. In addition, in the event of a merger, acquisition, reorganization, bankruptcy,
                 or other similar event, certain information in our possession may be transferred to our successors or assigns. In such circumstances, we will have no control or liability over the personal data from the 
                 time of such transfer. We do not sell or rent personal data to marketers or third parties. If, despite our security precautions, personal data is inadvertently disclosed, we shall endeavours to limit and 
                 remedy the disclosure to the extent permitted by law, but we accept no liability for unintentional disclosure of personal data.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
-                <strong>Retention of your Personal Data</strong><br/>
+            <p  class="para-3"> 
+                <strong  style="letter-spacing: 3px;">Retention of your Personal Data</strong><br/>
                 Any personal data that we collect will not be retained for longer than is necessary for the purpose or purposes for which it was collected.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; ">   
-                <strong>Protection of Personal Data</strong><br/>
+            <p  class="para-3">   
+                <strong  style="letter-spacing: 3px;">Protection of Personal Data</strong><br/>
                 Although no data transmission can be guaranteed to be 100% secure, we follow reasonable industry standards to ensure that the personal data the Company collects, uses, or discloses is accurate, 
                 complete, up-to-date, and relevant and stored securely where possible, and to ensure that the personal data we hold is protected from misuse, interference, loss, unauthorized access, modification, 
                 or disclosure by the use of various industry-standard methods including but not limited to access limitations, Secure Socket Layer encryption technology, data encryption, firewalls, and physical
                 access controls to building structures and files.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; ">     
+            <p  class="para-3">     
                 We maintain strict administrative, technical and physical procedures to protect information stored on our servers, which are located in the United Kingdom. Access to information is limited through 
                 various industry-standard measures to those employees for whom such access is necessary to perform their job functions.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; ">     
+            <p  class="para-3">     
                 
-                <strong>Changes to this Policy</strong><br/>
+                <strong  style="letter-spacing: 3px;">Changes to this Policy</strong><br/>
                 We reserve the right to make changes to this Privacy Policy at any time and for any reason without notice. We may provide notice of such changes or any other communications or disclosures regarding 
                 this Privacy Policy by posting on our website. Such notice shall be considered to be received by you no later than twenty-four (24) hours after posting.
             </p>
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "> 
+            <p  class="para-3 "> 
                 
-                <strong>Access, Correction and Complaints – Contact Us</strong><br/>
+                <strong  style="letter-spacing: 3px;">Access, Correction and Complaints – Contact Us</strong><br/>
                 If you have any questions or concerns about this Privacy Policy or would like to access or seek correction of your personal data, please contact info@comunityplatform.com. We want to make sure that 
                 your personal data is accurate and up to date. You have the right to request a copy of all personal data held by us at any time or to correct or remove personal data that you believe is inaccurate. This 
                 request should be made in writing to the email address above and a small charge may be made for this service
@@ -165,25 +185,29 @@
 </div>
 
 <div class="footer-menu">
-    <img src="./comunityLogo.png" width="200"/>
+        
+    <img src="./comunityLogo.png" width="200" />
     <div style="width: 5%;"></div>
 
-    <div>Terms of use</div>
-    <div>Privacy</div>
-    <div>Legal</div>
-    <div>Pricing</div>
-    <div>Licence Terms</div>
-    <div>Contact</div>
+    <div style="font-size: 14pt;">Terms of use</div>
+    <div style="font-size: 14pt;"><a href="privacy.html" style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
+    <div style="font-size: 14pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);"> Legal</a></div>
+    <div style="font-size: 14pt;">Pricing</div>
+    <div style="font-size: 14pt;">Licence Terms</div>
+    <div style="font-size: 14pt;">Contact</div>
     <div></div>
     <div></div>
     <div style="width: 5%;"></div>
-    <div><img src="/linkedin.svg" width="20"/></div>
-    <div><img src="/facebook.svg" width="20"/></div>
-    <!-- <div><img src="/email.svg" width="20"/></div> -->
+    <div><a href="https://www.linkedin.com/company/comunity/"><img src="/linkedin.svg" width="20" /></a></div>
+    <div><a href="https://www.facebook.com/ComUnityPlatform"> <img src="/facebook.svg" width="20" /></a></div>
     <div></div>
 </div>
-<footer></footer>
+
+<footer></footer> 
+
 <script src="script.js"></script>
 </body>
+
+
 
 </html>

@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= stylesheet href="style.css">
+    <link rel=stylesheet href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuIcon = document.getElementById("menuIcon");
@@ -20,33 +26,46 @@
     </script>
     <title>Why us</title>
 </head>
+
 <body >
-    <header class="topHeader">
-        <div class="menu" style="margin-left: 40px; margin-top: 10px;" >
-            <img src="comunityLogo.png" alt="logo" width="200">
-        </div>
-        <div style="margin-top: 60px; margin: auto;">
-            <nav>
-                <div class="menu-icon" id="menuIcon" >
-                    <div style="margin-right: 50px;" ><img src="comunityLogo.png" alt="logo" width="130">
-                    </div>
-                    <div class="svgStyle"><img src="magnifying-glass-50.svg" width="15" /><span
-                            class="getStarted">GET STARTED</span> </div>
-                    <div style="flex-grow: 1; margin-top: 10px; margin-right: 0;"> &#9776; </div>
 
-                </div>
-                <ul class="menu" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="business.html">Business</a></li>
-                    <li><a href="technical.html">Technical</a></li>
-                    <li>Why Us</li>
-                    <li><a href="get_started.html"><img src="magnifying-glass-50.svg" width="18" /> Get Started</a></li>
-                </ul>
+    <header class="topHeader" style="width: 100%;">
+        <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;" >
+          <img src="comunityLogo.png" alt="logo" width="200">
+      </div>
 
-            </nav>
-        </div>
+      <div class="navBarItems">
+          <nav>
+              <div class="menu-icon" id="menuIcon" >
+                  <div class="menuItems" ><img src="comunityLogo.png" alt="logo" style="    min-width: 100px;
+                      width: auto;
+                      height: auto;">
+                  </div>
+                  <div class="svgStyle" ><img src="magnifying.png" width="16" />
+                      <span class="getStarted" style="flex: 1;">GET STARTED</span> </div>
+                  <div style="flex: 1; margin-top: 10px; margin-right: 0; display: contents;"> &#9776; </div>
 
-    </header>
+              </div>
+
+              <ul class="menu" id="menu" 
+              style=" justify-content: space-between;" >
+                  <li ><a href="index.html">Home</a></li>
+                  <li ><a href="business.html">Business </a></li>
+                  <li ><a href="technical.html">Technical</a></li>
+                  <li >Why Us</li>
+                  <li >
+                      <div style="display: flex; flex-direction: row; gap: 5px;" >
+                      <div><img src="/search.svg" width="22" style="margin-top: 3px;" /></div>
+                      <div style=" margin-top: 2px;"><a href="get_started.html"> Get Started</a></div>
+                      </div>
+                  </li>
+              </ul>
+
+          </nav>
+      </div>
+
+  </header>
+
     <main class="main">
         <div style="width: 100%; margin-top: 100px;">
             <h1 class="heading">THE DIGITAL PLATFORM PARTNER</h1>
@@ -68,24 +87,11 @@
     <div class="cardItemWhyUs" >
          <div style="width: 10%;  margin-top: 10px;"><img src="/star.svg" width="45px"/></div>
          <div style="width: 90%;"> 
-            <div style="
-            width: 100%;
-            font-family: 'Comfortaa', sans-serif;
-            color: #333842;
-            font-size: 32px;
-            text-transform: uppercase;
-           font-weight: 600; margin-top: 20px; margin-bottom: 10px;">Cost</div>
+            <div class="whyUsHeader" style="color: var(--primary-grey);">Cost</div>
            
-            <div style="   font-family: 'Myriad Pro', sans-serif;
-            font-size: 20pt;
-            line-height: 1.2;
-            color: #000000; font-weight: 800;">Pay-as-you-succeed</div>
-             <div style=" border: none;
-             height: 3px;
-             width: 230px;
-             background-color: #000000;
-             margin: 10px 100px 10px 5px;"> </div>
-            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: #000000; font-size: 18px;">  Many software companies implement a pay-as-you-go payment method that charges based on 
+            <div class="whyUsSubHeader" style="color: var(--primary-grey);">Pay-as-you-succeed</div>
+             
+            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: var(--primary-grey); font-family: var(--font-family); font-size: 18px;">  Many software companies implement a pay-as-you-go payment method that charges based on 
                 usage. ComUnity will only ask for payment when you start seeing an agreed value from our platform. We call this Pay-as-you-Succeed </p>
             </div>
                    </div>
@@ -94,24 +100,10 @@
     <div class="cardItemWhyUs" >
          <div style="width: 10%;  margin-top: 10px;"><img src="/star.svg" width="45px"/></div>
          <div style="width: 90%;"> 
-            <div style="
-            width: 100%;
-            font-family: 'Comfortaa', sans-serif;
-            color: #333842;
-            font-size: 32px;
-            text-transform: uppercase;
-           font-weight: 600; margin-top: 20px; margin-bottom: 10px;">Agility</div>
+            <div class="whyUsHeader" style="color: var(--primary-grey);">Agility</div>
            
-            <div style="   font-family: 'Myriad Pro', sans-serif;
-            font-size: 20pt;
-            line-height: 1.2;
-            color: #000000; font-weight: 800;">Deliver Quicker</div>
-             <div style=" border: none;
-             height: 3px;
-             width: 180px;
-             background-color: #000000;
-             margin: 10px 100px 10px 5px;"> </div>
-            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: #000000; font-size: 18px;">  The ComUnity platform supports agile development methodologies to streamline the development and deployment process, making it 
+            <div class="whyUsSubHeader" style="color: var(--primary-grey);">Deliver Quicker</div>
+            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: var(--primary-grey); font-family: var(--font-family); font-size: 18px;">  The ComUnity platform supports agile development methodologies to streamline the development and deployment process, making it 
                 quicker to deliver new features and updates to applications. </p>
             </div>
                    </div> 
@@ -121,24 +113,10 @@
     <div class="cardItemWhyUs">
          <div style="width: 10%;  margin-top: 10px;"><img src="/star.svg" width="45px"/></div>
          <div style="width: 90%;"> 
-            <div style="
-            width: 100%;
-            font-family: 'Comfortaa', sans-serif;
-            color: #333842;
-            font-size: 32px;
-            text-transform: uppercase;
-           font-weight: 600; margin-top: 20px; margin-bottom: 10px;">PARTNERSHIPS</div>
+            <div class="whyUsHeader" style="color: var(--primary-grey);">PARTNERSHIPS</div>
            
-            <div style="   font-family: 'Myriad Pro', sans-serif;
-            font-size: 20pt;
-            line-height: 1.2;
-            color: #000000; font-weight: 800;">Microsoft Affiliation</div>
-             <div style=" border: none;
-             height: 3px;
-             width: 230px;
-             background-color: #000000;
-             margin: 10px 100px 10px 5px;"> </div>
-            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: #000000; font-size: 18px;">  ComUnity’s Azure partnership ensures you can 
+            <div class="whyUsSubHeader" style="color: var(--primary-grey);">Microsoft Affiliation</div>
+            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: var(--primary-grey); font-family: var(--font-family); font-size: 18px;">  ComUnity’s Azure partnership ensures you can 
                 build and scale applications on a trusted, cost-effective cloud platform. </p>
             </div>
                    </div>
@@ -147,52 +125,26 @@
     <div class="cardItemWhyUs" >
          <div style="width: 10%;  margin-top: 10px;"><img src="/star.svg" width="45px"/></div>
          <div style="width: 90%;"> 
-            <div style="
-            width: 100%;
-            font-family: 'Comfortaa', sans-serif;
-            color: #333842;
-            font-size: 32px;
-            text-transform: uppercase;
-           font-weight: 600; margin-top: 20px; margin-bottom: 10px;">MANAGEABILITY</div>
+            <div class="whyUsHeader" style="color: var(--primary-grey);">MANAGEABILITY</div>
            
-            <div style="   font-family: 'Myriad Pro', sans-serif;
-            font-size: 20pt;
-            line-height: 1.2;
-            color: #000000; font-weight: 800;">Platform. People. Process</div>
-             <div style=" border: none;
-             height: 3px;
-             width: 280px;
-             background-color: #000000;
-             /* margin: 10px 100px 10px 5px; */
-             "> </div>
-            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: #000000; font-size: 18px;">  ComUnity platform provides the technology 
+            <div class="whyUsSubHeader" style="color: var(--primary-grey);">Platform. People. Process</div>
+            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: var(--primary-grey); font-family: var(--font-family); font-size: 18px;">  ComUnity platform provides the technology 
                 that connects people with digitized processes and services. </p>
             </div>
                    </div> 
     </div>  
 </div>
+
+
+
 <div class="cards" style="width: 80%; margin: auto;">
     <div class="cardItemWhyUs"  >
          <div style="width: 10%;  margin-top: 10px;"><img src="/star.svg" width="45px"/></div>
          <div style="width: 90%;"> 
-            <div style="
-            width: 100%;
-            font-family: 'Comfortaa', sans-serif;
-            color: #333842;
-            font-size: 32px;
-            text-transform: uppercase;
-           font-weight: 600; margin-top: 20px; margin-bottom: 10px;">SECURITY</div>
+            <div class="whyUsHeader" style="color: var(--primary-grey);">SECURITY</div>
            
-            <div style="   font-family: 'Myriad Pro', sans-serif;
-            font-size: 20pt;
-            line-height: 1.2;
-            color: #000000; font-weight: 800;">De-risk the journey</div>
-             <div style=" border: none;
-             height: 3px;
-             width: 230px;
-             background-color: #000000;
-             margin: 10px 100px 10px 5px;"> </div>
-            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: #000000; font-size: 18px;"> Promoting collaboration between development 
+            <div class="whyUsSubHeader" style="color: var(--primary-grey);">De-risk the journey</div>
+            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: var(--primary-grey); font-family: var(--font-family); font-size: 18px;"> Promoting collaboration between development 
                 operations teams, and fostering a product-centric approach, helps to reduce the risk of 
                 errors. </p>
             </div>
@@ -202,24 +154,10 @@
     <div class="cardItemWhyUs">
          <div style="width: 10%;  margin-top: 10px;"><img src="/star.svg" width="45px"/></div>
          <div style="width: 90%;"> 
-            <div style="
-            width: 100%;
-            font-family: 'Comfortaa', sans-serif;
-            color: #333842;
-            font-size: 32px;
-            text-transform: uppercase;
-           font-weight: 600; margin-top: 20px; margin-bottom: 10px;">SPEED</div>
+            <div class="whyUsHeader" style="color: var(--primary-grey);">SPEED</div>
            
-            <div style="   font-family: 'Myriad Pro', sans-serif;
-            font-size: 20pt;
-            line-height: 1.2;
-            color: #000000; font-weight: 800;">Instant Scalability</div>
-             <div style=" border: none;
-             height: 3px;
-             width: 210px;
-             background-color: #000000;
-             margin: 10px 100px 10px 5px;"> </div>
-            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: #000000; font-size: 18px;">  Combining cloud infrastructure and automating software delivery processes enables faster 
+            <div class="whyUsSubHeader" style="color: var(--primary-grey);">Instant Scalability</div>
+            <div> <p style="margin-top: 20px; line-height: 1.8; padding-right: 10px; color: var(--primary-grey); font-family: var(--font-family); font-size: 18px;">  Combining cloud infrastructure and automating software delivery processes enables faster 
                 scalability </p>
             </div>
                    </div> 
@@ -235,25 +173,29 @@
 
 
 <div class="footer-menu">
-    <img src="./comunityLogo.png" width="200"/>
+        
+    <img src="./comunityLogo.png" width="200" />
     <div style="width: 5%;"></div>
 
-    <div>Terms of use</div>
-    <div>Privacy</div>
-    <div>Legal</div>
-    <div>Pricing</div>
-    <div>Licence Terms</div>
-    <div>Contact</div>
+    <div style="font-size: 14pt;">Terms of use</div>
+    <div style="font-size: 14pt;"><a href="privacy.html" style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
+    <div style="font-size: 14pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);"> Legal</a></div>
+    <div style="font-size: 14pt;">Pricing</div>
+    <div style="font-size: 14pt;">Licence Terms</div>
+    <div style="font-size: 14pt;">Contact</div>
     <div></div>
     <div></div>
     <div style="width: 5%;"></div>
-    <div><img src="/linkedin.svg" width="20"/></div>
-    <div><img src="/facebook.svg" width="20"/></div>
-    <!-- <div><img src="/email.svg" width="20"/></div> -->
+    <div><a href="https://www.linkedin.com/company/comunity/"><img src="/linkedin.svg" width="20" /></a></div>
+        <div><a href="https://www.facebook.com/ComUnityPlatform"> <img src="/facebook.svg" width="20" /></a></div>
     <div></div>
 </div>
-<footer></footer>
+
+<footer></footer> 
+
 <script src="script.js"></script>
 </body>
+
+
 
 </html>

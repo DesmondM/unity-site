@@ -1,6 +1,29 @@
+:root{
+    --white-color: #fff;
+    --primary-grey: #333852;
+    --secondary-grey: #b6bcc1;
+    --tertiary-grey: #D7DADD;
+    --quaternary-grey: #E6E7E8;
+    --comunity-blue: #4798ED;
+    --comunity-green: #59B563;
+    --comunity-orange: #FF5924;
+    --comunity-red: #FF0000;
+    --comunity-light-orange: #FFA61F;
+    --comunity-purple: #6E2463;
+    --header-font: 'Comfortaa', sans-serif;
+    --font-family: 'Montserrat', sans-serif; /* Define a variable for the font family */
+    --header-font-size: 40pt; /* Define a variable for the font size */
+    --font-size: 16px; 
+    --kerning: 2px;
+    --header-kerning: 10px;
+    --subheader-kerning: 3px;
+    
+
+}
+
 .html {
     scroll-behavior: smooth;
-    background-color: #e6e7e8;
+    background-color: var(--quaternary-grey);
     width: 100%;
 }
 
@@ -9,11 +32,19 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
+a{
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div{
+    color: var(--primary-grey);
+}
 
 body {
     width: 100%;
     overflow-x: hidden;
-    background-color: #e6e7e8;
+    background-color: var(--quaternary-grey);
     
     padding: 0;
     margin: 0;
@@ -40,19 +71,23 @@ body {
     width: 80%;
 }
 .main-left{
-    width: 50%; 
+    width: 65%; 
     margin-top: 100px;
 }
 .main-left2{
     width: 100%; 
     
 }
+.main-left3{
+    width: 50%; 
+    margin-top: 100px;
+}
 
 .topHeader {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 10px;
     height: 100px;
     position:sticky;
@@ -72,15 +107,16 @@ body {
 /* Style for the navigation menu */
 .topHeader nav  ul {
     list-style: none;
-    margin-top: 20px;
     padding-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500; /* Medium font weight */
     display: flex;
     gap: 20px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     cursor: pointer;
     padding: 4px;
-    font-size: 18pt;
+    font-size: 15pt;
     font-weight: 600;
     padding: 0;
 }
@@ -130,30 +166,32 @@ nav a:visited {
     margin: 10px;
     /* margin-left: 10px; */
     border: none;
-    border-radius: 5px;
-    width: 150px;
+    border-radius: 3px;
+    width: 180px;
     height: 50px;
-    font-family: 'Myriad Pro Regular', sans-serif;
+    font-family: var(--font-family); 
+    letter-spacing: var(--kerning);
     font-size: 14pt;
     line-height: 1.6;
-    color: #fff;
+    color: var(--white-color);
     /* padding: 30px;
     border-radius: 4px; */
     cursor: pointer;
     &:hover{
-        background-color: #000;
-        color: #fff;
+        background-color: var(--comunity-blue);
+        color: var(--white-color);
     }
 }
 
 .heading{
     display: flex;
     flex-direction: column;
-    font-family: 'Comfortaa', sans-serif;
-    letter-spacing: 10px;
+    font-family: var(--header-font);
+    letter-spacing: var(--header-kerning);
     color: #333842;
     gap: 20px;
-    font-size: 36pt;
+    /* font-size: 40pt; */
+    font-size: var(--header-font-size);
     line-height: 1.3;
     justify-content: space-between;
 
@@ -161,27 +199,29 @@ nav a:visited {
     margin: 10 10px 10px 0;
     max-width:1400px;
 
-    width: 80%;
+    
 }
 
 .subheading {
     display: flex;
     flex-direction: column;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
+    font-weight: 500; /* Medium font weight */
+    letter-spacing: var(--subheader-kerning);
     color: #333842;
     margin-top: 0;
     /* gap: 20px; */
-    font-weight: 300;
+    
     font-size: 20pt;
     line-height: 1.3;
     justify-content: space-between;
     /* background-color: #fff; */
     /* border: 1px solid #ddd; */
     border-radius: 4px;
-    margin: 10px 10px 30px 0;
-    max-width:1400px;
-    /* padding: 10px 20px; */
-    width: 80%;
+    /* margin: 10px 10px 30px 0; */
+    /* max-width:1400px; */
+    padding: 10px 0;
+    width: 100%;
 }
 
 .flexSection{
@@ -190,7 +230,7 @@ nav a:visited {
     justify-content: space-between;
     text-align: center;
     gap: 20px;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
     color: #7a858f;
@@ -205,12 +245,13 @@ nav a:visited {
     justify-content: space-between;
     text-align: center;
     gap: 2px;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
     color: #7a858f;
     width: 100%;
-    margin: 30px auto; 
+    margin: 70px auto 0px; 
+    padding-bottom: 0;
     letter-spacing: 3px; 
    
 }
@@ -219,14 +260,15 @@ nav a:visited {
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
-    gap: 2px;
-    font-family: 'Myriad Pro', sans-serif;
-    font-size: 12pt;
+    gap: 10px;
+    font-family: var(--font-family);
+    background-color: none;
+    font-size: 10pt;
     line-height: 1.8;
     color: #7a858f;
     width: 100%;
     margin: auto; 
-    letter-spacing: 3px; 
+    letter-spacing: 5px; 
    
 }
 .flexSection2{
@@ -235,27 +277,29 @@ nav a:visited {
     justify-content: center;
     text-align: center;
     gap: 20px;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
     color: #7a858f;
     padding: 8%;
     margin: 20px;
+    margin-top: 0;
     /* max-width:1400px; */
     
 }
 
 .oneCardItem {
      padding: 40px;
-     font-family: 'Comfortaa', sans-serif;
+     font-family: var(--header-font);
      color: #333842;
-     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
      text-transform: uppercase;
     font-weight: 600;
-    background-color: #e6e7e8; 
-    font-size: 3vw; 
+    background-color: var(--quaternary-grey); 
+    font-size: var(--header-font-size); 
+    letter-spacing: var(--header-kerning);
     flex-shrink: 1;
-
+    border-radius: 5px;
     width: 100%; 
     /* font-size: 40pt;  */
     margin: 20px auto
@@ -272,6 +316,7 @@ nav a:visited {
     font-weight: 600;
 
     background-color: #e6e7e8; 
+    border-radius: 5px;
     font-size: 2vw; 
     flex-shrink: 1;
 
@@ -303,14 +348,15 @@ nav a:visited {
 
 }
 .platformCards2 {
-     background-color: #d7dadd;
-     height: 200px;
-     /* width: 300px; */
-     padding: 40px;
-     font-family: 'Comfortaa', sans-serif;
-     color: #fff;
-     background-color: #333842;
-     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    
+     height: 250px;
+     width: 30%;
+     padding: 30px;
+     font-family: var(--header-font);
+     color: var(--white-color);
+     background-color: var(--primary-grey);
+     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+     border-radius: 4px;
      font-size: 60px;
      text-align: center;
      text-transform: uppercase;
@@ -321,20 +367,23 @@ nav a:visited {
 .platformCards2 p{
     margin: auto;
     text-align: center;
-     font-size: 20px;
      height: 10px;
      font-weight: 600;
-     color: #fff;
+     color: var(--quaternary-grey);
+     letter-spacing: var(--subheader-kerning); 
+     text-transform:none; 
+     font-size: 18pt; 
+     font-weight: 500;
 }
 
 .para{
     background-color: #fff;
-    border: 1px solid #fff;
-    /* width: 95%; */
-    font-family: 'Myriad Pro', sans-serif;
-    font-size: 16pt;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat as the font */
+       font-size: 14pt;
+       letter-spacing: 1px;
     line-height: 1.6;
-    color: #7a858f;
+    color: var(--primary-grey);
     padding: 20px 20px 20px 20px;
     /* margin: 0 10px 10px; */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px;
@@ -342,21 +391,35 @@ nav a:visited {
 
 
 .para-2{
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px;
+    border-radius: 4px;
     font-size: 12pt;
     line-height: 1.8;
-    color: #000000;
+    color: var(--primary-grey);
     width: 50%; 
     padding: 0; 
-    padding-right: 20px; 
-   
-    
+    padding-right: 20px;  
 }
-.technicalPagePara{
-    font-family: 'Myriad Pro', sans-serif;
+.para-3{
+    font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
-    color: #000000;
+    color: var(--primary-grey);
+    padding: 0; 
+    padding-right: 20px;  
+    width: 100%; 
+    padding: 0; 
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.technicalPagePara{
+    font-family: var(--font-family);
+    color: var(--primary-grey);
+    border-radius: 4px;
+    font-size: 12pt;
+    line-height: 1.8;
     width: 50%; 
     padding: 0; 
     padding-right: 20px; 
@@ -373,11 +436,11 @@ hr{
 .listed{
     background-color: #fff;
     border: 1px solid #fff;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
     padding: 30px;
-    color: black; 
+    color:  var(--primary-grey); 
     width: 50%; 
     font-size: 12pt; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
@@ -385,11 +448,11 @@ hr{
 .getStartedListed{
     background-color: #fff;
     border: 1px solid #fff;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
     padding: 30px;
-    color: black; 
+    color:  var(--primary-grey); 
     width: 100%; 
     font-size: 12pt; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
@@ -398,20 +461,20 @@ hr{
 .techNicalListed{
     background-color: #fff;
     border: 1px solid #fff;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
     padding: 30px;
-    color: black; 
+    color:  var(--primary-grey); 
     width: 40%; 
     font-size: 12pt; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
 }
 
 .cards{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+   display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
     border-radius: 4px;
     width: 100%;
 }
@@ -421,32 +484,35 @@ hr{
 }
 
 .item {
-    flex: 0 0 calc(33.33% - 26px); /* 33.33% width with some margin */
+    flex: 33%; /* 33.33% width with some margin */
 }
 
 .cardItem{
     display: flex;
     flex-direction: column;
     gap: 0px;
-    height: 200px;
+    height: 300px;
+    background-color: var(--tertiary-grey);
     justify-content: space-between;
-    border: 2px solid #fff;
+    border: 5px solid var(--quaternary-grey);
     /* border-radius: 4px; */
     margin: 0 auto;
-    color:#000000;
-    max-width:1400px;
+    color: var(--primary-grey);
+   
     padding: 10px 20px;
-    width: 100%;
+    max-width: 100%;
+    width: auto;
     &:hover{
-        background-color: #ddd;
-        border: 2px solid #ddd;
+        background-color: var(--quaternary-grey);
+        border: 5px solid var(--quaternary-grey);
     }
 }
 
 .cardItemCopy{
     margin: auto;
+    margin-top: 10px;
     font-size: 26px; 
-    color: black;
+    color: var(--primary-grey);
 }
 .cardItem2{
     display: flex; 
@@ -467,9 +533,9 @@ hr{
 .cardItemWhyUs{
     display: flex; 
     flex-direction: row;
-    width: 45%; 
+    width: 100%; 
     padding: 0; 
-    height: 380px;
+    height: 280px;
      padding: 20px; 
      background-color: #d7dadd; 
      border: solid 5px #e6e7e8; 
@@ -480,6 +546,11 @@ hr{
         border: solid 5px #e6e7e8; 
     }
     
+}
+
+.mobileImages{
+    max-width: 100%;
+    height: auto;
 }
 
 .cardItem_logos{
@@ -514,7 +585,7 @@ p{
     /* margin: 5px 0; */
     margin-top: 30px;
     text-align: left;
-    color: #7a858f;
+    color: var(--primary-grey);
     
 }
 
@@ -522,7 +593,7 @@ p span{
     font-family: 'Comfortaa', sans-serif;
     /* margin: 5px 0; */
     text-align: center;
-    color: #333842;
+    color: var(--primary-grey);
     margin:   auto;
     font-size: 30pt;
     font-weight: 600;
@@ -574,17 +645,17 @@ footer::before {
     justify-content:space-between;
     align-items: center;
     gap: 20px;
-    font-family: 'Myriad Pro', sans-serif;
-    font-size: 24px;
-    margin-right: 40px;
-    padding: 80px 80px 40px 80px; 
+    font-family: var(--font-family);
+    font-size: 10px;
+    /* margin-right: 40px; */
+    padding: 80px 0px 40px 50px; 
 }
   .footer-menu2 {
     display: flex;
     justify-content:flex-start;
     align-items: center;
     gap: 30px;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 12px;
     left: 0;
     bottom: 0;
@@ -597,13 +668,13 @@ footer::before {
 .footer-menu div{
     display: flex;
     gap: 30px;
-    font-family: 'Myriad Pro', sans-serif;
+    font-family: var(--font-family);
     font-size: 24px;
-    color: black;
+    color:  var(--primary-grey);
     cursor: pointer;
     &:hover{
-        color: #000;
-        font-weight: 680;
+        color: var(--primary-grey);
+        font-weight: 500;
     }
 }
 
@@ -645,6 +716,8 @@ footer::before {
 .logo img {
     max-width: 100%;
 }
+
+
 
 @keyframes marquee {
     0% {
@@ -719,6 +792,8 @@ footer::before {
 }
 
 .menu-icon {
+    width: 100%;
+    display: flex;
     font-size: 24px;
     cursor: pointer;
     display: none;
@@ -760,14 +835,46 @@ footer::before {
 }
 .brain{
     float: right; 
-    width: 45%;
+    width: 55%;
     margin: 0px 20px 10px 0; 
     margin-top: -80px; 
     margin-right: -20px; 
     position: relative;
 }
+.whyUsHeader{
+    width: 100%;
+    font-family: var(--header-font);
+    color: var(--primary-grey);
+    font-size: 32px;
+    text-transform: uppercase;
+   font-weight: 600; 
+   margin-top: 20px; 
+   margin-bottom: 10px; 
+   letter-spacing: 5px;
+}
+.whyUsSubHeader{
+    font-family: var(--font-family);
+    font-size: 20pt;
+    line-height: 1.2;
+    text-decoration: underline;
+    text-underline-offset: 18px;
+    color: var(--primary-grey);
+     font-weight: 500;
+}
 
+.navBarItems{
+    width: 55%; 
+    margin-top: 60px; 
+    margin: auto; 
+    margin-left:10px; 
+    margin-right: 50px;
+}
 
+.menuItems{
+    margin-right: 50px; 
+    height: 100px; 
+    width: 25%;
+}
 /* @media (max-width: 768px) {
     .menu {
         display: none;
@@ -892,25 +999,26 @@ footer::before {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #070707;
+        background-color: var(--primary-grey);
         position: absolute;
         width: 100%;
         overflow: hidden;
-        top: 70px;
+        top: 100px;
         left: 0;
     }
 
     .menu.show {
         display: flex;
     }
+    
 
     .menu.active {
         display: block;
-        /* max-width: 100%;
-        width: auto; */
+        max-width: 100%;
+        width: auto;
         width:90%;
         background-color: #d7dadd; /* Change to a readable background color */
-        color: #000000;
+        color: var(--primary-grey);
         font-size: 32pt;
         text-align: right;
         font-size: 10pt;
@@ -975,7 +1083,8 @@ footer::before {
     }
 
     .subheading {
-        font-size: 18pt;
+        font-size: 14pt;
+        letter-spacing: 2px;
     }
 
     .sectionOne-image {
@@ -985,6 +1094,8 @@ footer::before {
     .flexSection2 {
         flex-direction: column;
         height: 700px;
+        margin: auto;
+    margin-right: 25px;
     }
 
     .cardItem {
@@ -1011,8 +1122,12 @@ footer::before {
 
     .platformCards2 {
         margin: auto;
+        width: 90%;
     }
 
+    .platformCards2 p{
+        font-size: 16pt;
+    }
     .footer-menu {
         flex-direction: column;
 
@@ -1037,13 +1152,16 @@ footer::before {
 
     .getStarted {
         margin-bottom: 30px;
+        margin-left: 2px;
         font-size: 12pt;
         padding: 0;
+        white-space: nowrap;
     }
 
     .svgStyle {
         width: 150px;
-        margin-top: 12px;
+        margin-top: 1px;
+        margin-left: 15%;
     }
     .para{
         margin: 0;
@@ -1060,7 +1178,8 @@ footer::before {
         text-align: center;
     }
     .cards{
-        width: 80%;
+        flex-direction: column;
+        width: 90%;
         margin: auto;
         gap: 0;
     }
@@ -1138,4 +1257,25 @@ footer::before {
    .getStartedListed{
     width: 85%;
    }
+   .navBarItems{
+    width: 100%; 
+    margin-top: 60px; 
+    margin: auto; 
+    margin-left:10px; 
+    margin-right: 50px;
+   }
+   .mobileImages{
+    max-width: 25%;
+    height: auto;
+    margin-top: 50px;
+}
+.main-left3{
+    width: 100%; 
+    margin: auto;
+    margin-top: 100px;
+}
+#formTextarea {
+    width: 95%;
+}
+
 }

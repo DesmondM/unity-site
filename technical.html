@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= stylesheet href="style.css">
+    <link rel=stylesheet href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const menuIcon = document.getElementById("menuIcon");
@@ -18,35 +24,48 @@
         });
 
     </script>
-    <title>Technical</title>
+    <title>Technical Page</title>
 </head>
-<body>
-    <header class="topHeader">
-        <div class="menu" style="margin-left: 40px; margin-top: 10px;" >
-            <img src="comunityLogo.png" alt="logo" width="200">
-        </div>
-        <div style="margin-top: 60px; margin: auto;">
-            <nav>
-                <div class="menu-icon" id="menuIcon" >
-                    <div style="margin-right: 50px;" ><img src="comunityLogo.png" alt="logo" width="130">
-                    </div>
-                    <div class="svgStyle"><img src="magnifying-glass-50.svg" width="15" /><span
-                            class="getStarted">GET STARTED</span> </div>
-                    <div style="flex-grow: 1; margin-top: 10px; margin-right: 0;"> &#9776; </div>
 
-                </div>
-                <ul class="menu" id="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="business.html">Business</a></li>
-                    <li>Technical</li>
-                    <li><a href="why_us.html">Why Us</a></li>
-                    <li><a href="get_started.html"><img src="magnifying-glass-50.svg" width="18" /> Get Started</a></li>
-                </ul>
+<body >
 
-            </nav>
-        </div>
+    <header class="topHeader" style="width: 100%;">
+        <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;" >
+          <img src="comunityLogo.png" alt="logo" width="200">
+      </div>
 
-    </header>
+      <div class="navBarItems">
+          <nav>
+              <div class="menu-icon" id="menuIcon" >
+                  <div class="menuItems" ><img src="comunityLogo.png" alt="logo" style="    min-width: 100px;
+                      width: auto;
+                      height: auto;">
+                  </div>
+                  <div class="svgStyle" ><img src="magnifying.png" width="16" />
+                      <span class="getStarted" style="flex: 1;">GET STARTED</span> </div>
+                  <div style="flex: 1; margin-top: 10px; margin-right: 0; display: contents;"> &#9776; </div>
+
+              </div>
+
+              <ul class="menu" id="menu" 
+              style=" justify-content: space-between;" >
+                  <li ><a href="index.html">Home</a></li>
+                  <li ><a href="business.html">Business</a> </li>
+                  <li >Technical</li>
+                  <li ><a href="why_us.html">Why Us</a></li>
+                  <li >
+                      <div style="display: flex; flex-direction: row; gap: 5px;" >
+                      <div><img src="/search.svg" width="22" style="margin-top: 3px;" /></div>
+                      <div style=" margin-top: 2px;"><a href="get_started.html"> Get Started</a></div>
+                      </div>
+                  </li>
+              </ul>
+
+          </nav>
+      </div>
+
+  </header>
+    
     <main class="main">
         <div style="width: 100%; margin-top: 100px;">
             <h1 class="heading" style="margin-left: 0;">PLATFORM ENGINEERING</h1>
@@ -69,7 +88,7 @@ into the cost centre of IT.
 Using the CI/CD methodology works well with simple workflows.
 But things start getting more complex and time-consuming whenever they need to do anything beyond this basic workflow, such as: 
 
-<ul><li> Adding environment variables and changing configurations </li>
+<ul style="margin-left: 15px;"><li> Adding environment variables and changing configurations </li>
 <li> Adding services and dependencies </li>
 <li> Rolling back and debugging </li>
 <li> Spinning up a new environment </li>
@@ -83,6 +102,7 @@ road.</li> </ul>
                 Platform engineering is intended to modernize enterprise software delivery, particularly for digital transformation. The ComUnity platform uses APIs as the consistent way to access different cloud providers and third-party offerings. APIs are the foundation of self-service tools, services, knowledge and support, and make modularization possible. With an API-first approach, companies use APIs as the product's key element in how they go to market. The platform creates a golden path in the software development life cycle that a user can follow with minimal cognitive load and that drives standardization. <br><br>
             
                 What makes a platform compelling:<br>
+                
                 • It enables self-service for the overwhelming majority of use cases<br>
                 • It is composable, containing discrete services that can be used independently<br>
                 • It does not force an inflexible way of working on the delivery team<br>
@@ -109,25 +129,29 @@ road.</li> </ul>
 </div>
 
 <div class="footer-menu">
-    <img src="./comunityLogo.png" width="200"/>
+        
+    <img src="./comunityLogo.png" width="200" />
     <div style="width: 5%;"></div>
 
-    <div>Terms of use</div>
-    <div>Privacy</div>
-    <div>Legal</div>
-    <div>Pricing</div>
-    <div>Licence Terms</div>
-    <div>Contact</div>
+    <div style="font-size: 14pt;">Terms of use</div>
+    <div style="font-size: 14pt;"><a href="privacy.html" style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
+    <div style="font-size: 14pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);"> Legal</a></div>
+    <div style="font-size: 14pt;">Pricing</div>
+    <div style="font-size: 14pt;">Licence Terms</div>
+    <div style="font-size: 14pt;">Contact</div>
     <div></div>
     <div></div>
     <div style="width: 5%;"></div>
-    <div><img src="/linkedin.svg" width="20"/></div>
-    <div><img src="/facebook.svg" width="20"/></div>
-    <!-- <div><img src="/email.svg" width="20"/></div> -->
+    <div><a href="https://www.linkedin.com/company/comunity/"><img src="/linkedin.svg" width="20" /></a></div>
+    <div><a href="https://www.facebook.com/ComUnityPlatform"> <img src="/facebook.svg" width="20" /></a></div>
     <div></div>
 </div>
-<footer></footer>
+
+<footer></footer> 
+
 <script src="script.js"></script>
 </body>
+
+
 
 </html>

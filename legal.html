@@ -1,46 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel= stylesheet href="style.css">
+    <link rel=stylesheet href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
-    <title>Legal</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.getElementById("menuIcon");
+            const menu = document.getElementById("menu");
+            const footerMenu = document.querySelector('.footer-menu');
+
+            menuIcon.addEventListener("click", function () {
+                menu.classList.toggle("active");
+                footerMenu.classList.toggle('show')
+            });
+        });
+
+    </script>
+    <title>Home Page</title>
 </head>
-<body style="background-color: #e6e7e8; padding: 0; margin: 0;">
-    <header class="topHeader">
-        <div style="width: 35%; margin-left: 80px;">
-        <img src="comunityLogo.png" alt="logo" width="250">
-    </div>
-    <div style="margin-top: 20px;">
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="business.html">Business </a> </li>
-            <li><a href="technical.html">Technical</a></li>
-            <li><a href="why_us.html" >Why Us</a></li>
-            <li><a href="get_started.html" >Get Started</a></li>
-            <li><a href="#" ><img src="magnifying-glass-50.svg" width="18"/> Search</a></li>
-        </ul>
-    </nav>
-    </div>
-    
-    </header>
+
+<body >
+
+    <header class="topHeader" style="width: 100%;">
+        <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;" >
+          <img src="comunityLogo.png" alt="logo" width="200">
+      </div>
+
+      <div class="navBarItems">
+          <nav>
+              <div class="menu-icon" id="menuIcon" >
+                  <div class="menuItems" ><img src="comunityLogo.png" alt="logo" style="    min-width: 100px;
+                      width: auto;
+                      height: auto;">
+                  </div>
+                  <div class="svgStyle" ><img src="magnifying.png" width="16" />
+                      <span class="getStarted" style="flex: 1;">GET STARTED</span> </div>
+                  <div style="flex: 1; margin-top: 10px; margin-right: 0; display: contents;"> &#9776; </div>
+
+              </div>
+
+              <ul class="menu" id="menu" 
+              style=" justify-content: space-between;" >
+                  <li >Home</li>
+                  <li ><a href="business.html">Business </a></li>
+                  <li ><a href="technical.html">Technical</a></li>
+                  <li ><a href="why_us.html">Why Us</a></li>
+                  <li >
+                      <div style="display: flex; flex-direction: row; gap: 5px;" >
+                      <div><img src="/search.svg" width="22" style="margin-top: 3px;" /></div>
+                      <div style=" margin-top: 2px;"><a href="get_started.html"> Get Started</a></div>
+                      </div>
+                  </li>
+              </ul>
+
+          </nav>
+      </div>
+
+  </header>
+
     <main class="main">
         <div style="width: 100%; margin-top: 100px;">
             <h1 class="heading" style="margin-left: 0;">LEGAL</h1>
              <div >
            
 
-            <p  class="para-2" style="width: 100%; padding: 0; color: black; text-align: justify;
-            text-justify: inter-word; "><br> 
+            <p  class="para-3"><br> 
                 ComUnity Systems (PTY) Limited, a British Limited Liability Corporation (“ComUnity”) makes information, products, and services available on this website, subject to the following terms and conditions (“Terms”). By accessing this site, you agree to be bound by these Terms. Further, your use of this website is subject to those additional terms and conditions provided by ComUnity and, subject 
 to ComUnity’s sole discretion, applicable to certain information, products, and services offerings available through this website. The Additional Terms include, but are not limited to, sales agreements, 
 receipts, license agreements, supplementary user agreements, and the Privacy Policy and other agreements (collectively, “Additional Terms”). The Additional Terms are hereby incorporated by reference into these Terms (if there is any conflict between the Additional Terms and these Terms, the former shall prevail). ComUnity reserves the right to change these Terms, and/or the products, services,
 prices, and programs mentioned in this website, at any time, at its sole discretion, without notice. ComUnity reserves the right to seek all remedies available by law and in equity for any violation of these 
 Terms. Any rights not expressly granted herein are reserved.
-<ol>
+<ol style="font-family: var(--font-family);
+font-size: 12pt;
+line-height: 1.6;
+padding: 20px 20px 20px 20px;">
  <li>
 
 If you are using this website on behalf of your employer, you represent that you are authorized to accept these terms and conditions on your employer’s behalf. Further, you acknowledge that you are 
@@ -129,25 +170,29 @@ Terms shall not constitute a waiver thereof or of any other provision hereof.If 
 </div>
 
 <div class="footer-menu">
-    <img src="./comunityLogo.png" width="200"/>
+        
+    <img src="./comunityLogo.png" width="200" />
     <div style="width: 5%;"></div>
 
-    <div>Terms of use</div>
-    <div>Privacy</div>
-    <div>Legal</div>
-    <div>Pricing</div>
-    <div>Licence Terms</div>
-    <div>Contact</div>
+    <div style="font-size: 14pt;">Terms of use</div>
+    <div style="font-size: 14pt;"><a href="privacy.html" style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
+    <div style="font-size: 14pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);"> Legal</a></div>
+    <div style="font-size: 14pt;">Pricing</div>
+    <div style="font-size: 14pt;">Licence Terms</div>
+    <div style="font-size: 14pt;">Contact</div>
     <div></div>
     <div></div>
     <div style="width: 5%;"></div>
-    <div><img src="/linkedin.svg" width="20"/></div>
-    <div><img src="/facebook.svg" width="20"/></div>
-    <!-- <div><img src="/email.svg" width="20"/></div> -->
+    <div><img src="/linkedin.svg" width="20" /></div>
+    <div><img src="/facebook.svg" width="20" /></div>
     <div></div>
 </div>
-<footer></footer>
+
+<footer></footer> 
+
 <script src="script.js"></script>
 </body>
+
+
 
 </html>
