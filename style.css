@@ -1297,7 +1297,10 @@ footer::before {
    
 }
 .cardItemWhyUs{
-    height: 280px;
+    height: 285px;
+    margin: auto;
+    width: 90%;
+    letter-spacing: 2px;
 }
 .whyUsParagraph{
     margin-top: 20px; 
