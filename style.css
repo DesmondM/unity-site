@@ -1049,7 +1049,7 @@ footer::before {
       }
 
       .menu.active:hover {
-        color: white;
+        color: var(--primary-grey);
       }
       
 
