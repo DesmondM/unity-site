@@ -854,12 +854,22 @@ footer::before {
 }
 .whyUsSubHeader{
     font-family: var(--font-family);
+    white-space: nowrap;
     font-size: 20pt;
     line-height: 1.2;
     text-decoration: underline;
     text-underline-offset: 18px;
     color: var(--primary-grey);
-     font-weight: 500;
+    font-weight: 500;
+    letter-spacing: var(--kerning);
+}
+.whyUsParagraph{
+    margin-top: 20px; 
+    line-height: 1.8; 
+    padding-right: 10px; 
+    color: var(--primary-grey); 
+    font-family: var(--font-family); 
+    font-size: 18px;
 }
 
 .navBarItems{
@@ -1161,7 +1171,7 @@ footer::before {
     .svgStyle {
         width: 150px;
         margin-top: 1px;
-        margin-left: 15%;
+        margin-left: 12%;
     }
     .para{
         margin: 0;
@@ -1277,5 +1287,25 @@ footer::before {
 #formTextarea {
     width: 95%;
 }
+.whyUsHeader{
+    font-size: 20px;
+}
+.whyUsSubHeader{
+    font-size: 16px;
+    text-underline-offset: 12px;
+   
+}
+.cardItemWhyUs{
+    height: 280px;
+}
+.whyUsParagraph{
+    margin-top: 20px; 
+    line-height: 1.5; 
+    padding-right: 10px; 
+    color: var(--primary-grey); 
+    font-family: var(--font-family); 
+    font-size: 14px;
+}
+
 
 }
