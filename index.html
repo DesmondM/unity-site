@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon4.png">
     <link rel=stylesheet href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -24,38 +27,38 @@
         });
 
     </script>
-    <title>Home Page</title>
+    <title>Home</title>
 </head>
 
-<body >
+<body>
+
     <header class="topHeader" style="width: 100%;">
-          <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;" >
-            <img src="comunityLogo.png" alt="logo" width="200">
+        <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;">
+          <a href="index.html"> <img src="comunityLogo.png" alt="logo" width="200"></a> 
         </div>
 
         <div class="navBarItems">
             <nav>
-                <div class="menu-icon" id="menuIcon" >
-                    <div class="menuItems" ><img src="comunityLogo.png" alt="logo" style="    min-width: 100px;
-                        width: auto;
-                        height: auto;">
+                <div class="menu-icon" id="menuIcon">
+                    <div class="menuItems"><img src="comunityLogo.png" alt="logo" >
                     </div>
-                    <div class="svgStyle" ><img src="magnifying.png" width="16" />
-                        <span class="getStarted" style="flex: 1;">GET STARTED</span> </div>
-                    <div style="flex: 1; margin-top: 10px; margin-right: 0; display: contents;"> &#9776; </div>
+                    <div class="svgStyle"><img src="magnifying.png" width="12" />
+                        <span class="getStarted" >SEARCH</span>
+                    </div>
+                    <div > &#9776; </div>
 
                 </div>
 
-                <ul class="menu" id="menu" 
-                style=" justify-content: space-between;" >
-                    <li >Home</li>
-                    <li ><a href="business.html">Business </a></li>
-                    <li ><a href="technical.html">Technical</a></li>
-                    <li ><a href="why_us.html">Why Us</a></li>
-                    <li >
-                        <div style="display: flex; flex-direction: row; gap: 5px;" >
-                        <div><img src="/search.svg" width="22" style="margin-top: 3px;" /></div>
-                        <div style=" margin-top: 2px;"><a href="get_started.html"> Get Started</a></div>
+                <ul class="menu" id="menu" style=" justify-content: space-between;">
+                    <li>Home</li>
+                    <li><a href="business.html">Business </a></li>
+                    <li><a href="technical.html">Technical</a></li>
+                    <li><a href="why_us.html">Why Us</a></li>
+                    <li><a href="get_started.html">Get Started</a></li>
+                    <li>
+                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                            <div style="width: 15px;" ><img src="magnifying.png" width="90" style="margin-top: 6px;" /></div>
+                            <div style=" margin-top: 2px;"><a href="#"> Search</a></div>
                         </div>
                     </li>
                 </ul>
@@ -65,56 +68,54 @@
 
     </header>
 
-
-
-    <main class="main">
-        <div class="main-left" >
+    <main class="main" style="position: relative; margin-top: 40px; z-index: -2;">
+        <div class="main-left-digital-partner" >
             <h1 class="heading">THE DIGITAL PLATFORM PARTNER</h1>
-            <div class="subheading">A platform for building digital organisations</div>
+            <div class="subheading">A platform for building digital organizations</div>
             <p class="para">Digital platforms are transformative systems that support an ecosystem of end users,
                 clients, suppliers, and digital product developers who collaborate and create value. <br /><br />
                 Let <b>ComUnity</b> be your digital partner by taking care of the complex platform engineering
                 layer so you can focus on building out a digital portal that differentiates your organization,
-                improves competitiveness and creates business value</p>
-            <button class="button" style="margin-left: 0;">Get Started</button>
+                improves competitiveness and creates business value.</p>
+            <a href="business.html"><button class="button" style="margin-left: 0;">Read more</button></a>
         </div>
-        <div class="sectionOne-image" ><img src="/Man-transparent.gif" alt="line drawing" width="100%" style="float: inline-end;"  /></div>
+    
+        <div class="mountainMan">
+            <div class="image"><img src="/Man-new.gif" alt="line drawing" width="575" /></div>
+        </div>
     </main>
+    
 
-
-    <div style="background-image: url('./pebbles1.png'); background-size: cover; height: 510px; ">
+    <div style="background-image: url('./darkBackgrd.png'); background-size: cover; height: 510px; ">
         <div
-            style="display: flex; gap: 1px; flex-direction: column; justify-content: center; margin: auto; width: 80%;"> 
+            style="display: flex; gap: 1px; flex-direction: column; justify-content: center; margin: auto; width: 80%;">
 
 
             <div class="oneCard">
                 <div class="oneCardItem" style="margin-bottom: 10px;">Platform</div>
             </div>
             <div class="fourCards">
-                <div class="fourCardsItem" style="width: 100%; background-color: var(--tertiary-grey);" >Strategy</div>
-                <div class="fourCardsItem"style="width: 100%;  background-color: var(--tertiary-grey)" >Design</div>
-                <div class="fourCardsItem" style="width: 100%;  background-color: var(--tertiary-grey)" >Business</div>
-                <div class="fourCardsItem" style="width: 100%;  background-color: var(--tertiary-grey)" >Operations</div>
+                <div class="fourCardsItem" style="width: 100%; background-color: var(--tertiary-grey);">Strategy</div>
+                <div class="fourCardsItem" style="width: 100%;  background-color: var(--tertiary-grey)">Design</div>
+                <div class="fourCardsItem" style="width: 100%;  background-color: var(--tertiary-grey)">Business</div>
+                <div class="fourCardsItem" style="width: 100%;  background-color: var(--tertiary-grey)">Operations</div>
             </div>
 
-       
+
         </div>
     </div>
 
-
-
-  <footer>
+    <footer>
     </footer>
 
-       
     <div class="section_two" style="margin-top: 50px;">
 
         <div class="main">
             <div class="main-left3">
                 <h1 class="heading">PLATFORM
                     ENGINEERING</h1>
-                <h2 class="subheading">Accelerating application delivery and business value</h2>
-                <div style="display: flex;
+                <span class="subheading">Accelerating application delivery<br>and business value</span>
+                <!-- <div style="display: flex;
         justify-content: center;
         align-items: center;
         height: 30vh;
@@ -122,19 +123,25 @@
         margin-left: 0px;
         margin-bottom: 40px ;" >
             <iframe src="data.html" width="800" height="600" frameborder="0">Image here</iframe>
-        </div>
+        </div> -->
+                <div style="width: 100%; margin-top: 40px; margin-bottom: 40px;">
+                    <div class="image" style="position: relative; margin-left: -20px; z-index: -10;"><img src="/Hands-transparent.gif" alt="line drawing" width="600" /></div>
+                </div>
+
+
             </div>
 
-            <div class="main-left3" >
+            <div class="main-left3">
                 <p class="para" style="margin-top: 0;">Platform engineering is a technology approach that accelerates
                     the delivery of applications and the speed at which they produce
                     business value. It improves the developers’ experience and
-                    productivity by providing self-service capabilities with
+                    productivity by providing <b style="white-space: nowrap; font-weight: 100;">self-service</b>
+                    capabilities with
                     automated infrastructure operations. <br /><br />
                     The main goal is to provide a consistent, reliable, and scalable
                     foundation that simplifies and accelerates the development
                     and operation of applications and services.</p>
-                <button class="button" style="float: right; margin-right: 0px;">Read more</button>
+               <a href="technical.html"><button class="button" style="float: right; margin-right: 0px;">Read more</button></a> 
             </div>
 
         </div>
@@ -144,102 +151,101 @@
             <video src="/Hands.mp4" alt="line drawing" width="40%" controls autoplay></video>
             <img src="/Hands.mp4" alt="line drawing" width="40%" />
         </div> -->
-        
+
     </div>
     <footer></footer>
-    
-    
-    
-   
     <div class="main2">
-        <div class="main-left2">
+        <div class="main-left2" style="width: 70%;">
             <div class="makesUsDifferent">
-               <h1 class="heading" style="margin-top: 20px;" >WHAT MAKES US
-                DIFFERENT</h1>
-                
+                <h1 class="heading" style="margin-top: 20px; margin-bottom: 30px;">WHAT MAKES US
+                    DIFFERENT</h1>
+
             </div>
-            <button class="button" style="margin: 0;">Learn more</button>
+           <a href="why_us.html"> <button class="button" style="margin: 0;">Learn more</button></a>
         </div>
-        <div style="width: 70%; margin-top: 10px;">
-            <div class="image"><img src="/lineArt3.png" alt="line drawing" width="250" /></div>
+        <div style="width: 70%; margin-top: 30px;">
+            <div class="image"><img src="/Fingerprint.gif" alt="line drawing" width="180" /></div>
         </div>
 
 
     </div>
 
-
     </div>
 
-    <div class="cards" >
+    <div class="cards">
 
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>COST</span>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;">
+                    <span>COST</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-            
-                <p class="cardItemCopy" >Pay-as-you-succeed</p>
-            </p>
+
+                <p class="cardItemCopy">Pay-as-you-succeed</p>
+                </p>
             </div>
         </div>
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>AGILITY</span>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;">
+                    <span>AGILITY</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-            
-                <p class="cardItemCopy" >Buy vs. Build</p>
-            </p>
+
+                <p class="cardItemCopy">Buy vs. Build</p>
+                </p>
             </div>
         </div>
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>REACH</span>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;">
+                    <span>REACH</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-            
-                <p class="cardItemCopy" >Microsoft Affiliation</p>
-            </p>
+
+                <p class="cardItemCopy">Microsoft Affiliation</p>
+                </p>
             </div>
         </div>
 
 
-      
+
 
     </div>
 
     <!-- Second row of cards -->
 
-    <div class="cards" >
+    <div class="cards">
 
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>MANAGEABILITY</span>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;">
+                    <span>MANAGEABILITY</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-            
-                <p class="cardItemCopy" >Platform. People. Process</p>
-            </p>
+
+                <p class="cardItemCopy">Platform. People. Process</p>
+                </p>
             </div>
         </div>
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>SECURITY</span>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;">
+                    <span>SECURITY</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-            
-                <p class="cardItemCopy" >De-risks the journey</p>
-            </p>
+
+                <p class="cardItemCopy">De-risks the journey</p>
+                </p>
             </div>
         </div>
         <div class="item">
             <div class="cardItem">
-                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;"><span>SPEED</span>
+                <p style="margin: auto; letter-spacing: 3px; margin-top: 90px;  margin-bottom: 10px; padding: 0;">
+                    <span>SPEED</span>
                 <div style="margin: 0 auto;"><img src="/star.svg" width="30px" /></div>
-            
-                <p class="cardItemCopy" >Instant Scalability</p>
-            </p>
+
+                <p class="cardItemCopy">Instant Scalability</p>
+                </p>
             </div>
         </div>
 
     </div>
-
-
 
     <div class="sectionTwo">
 
@@ -250,9 +256,10 @@
              width: 200px;
              background-color: #ffffff;
              margin: auto;
-             margin-bottom: 20px;"> </div>
+            
+             margin-bottom: 30px;"> </div>
 
-                <p > Combined years
+                <p> Combined years <br />
                     building platforms</p>
             </div>
             <div class="platformCards2">108
@@ -262,16 +269,14 @@
              background-color: #ffffff;
              margin: auto;
              margin-bottom: 20px;"> </div>
-                <p > Combined years <br /> 
+                <p> Combined years <br />
                     in the ICT sector</p>
             </div>
 
         </div>
     </div>
     </div>
-
-
-
+    <div class="partners">Partners and affiliates</div>
     <div class="slider">
         <div class="slide-track">
             <div class="slide">
@@ -281,40 +286,41 @@
                 <div class="logo-animation" style="margin-top: 20px;"> <img src="partner2.png" alt="" width=100></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 20px;  margin-left: 50px; "> <img src="partner3.png" alt="" width="30"></div>
+                <div class="logo-animation" style="margin-top: 20px;  margin-left: 50px; "> <img src="partner3.png"
+                        alt="" width="30"></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 30px;"> <img src="partner4.png" alt="" width="180" ></div>
+                <div class="logo-animation" style="margin-top: 30px;"> <img src="partner4.png" alt="" width="180"></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 10px;"> <img src="partner5.png" alt="" width=80></div>
+                <div class="logo-animation" style="margin-top: 10px;"> <img src="partner5.png" alt="" width=80></div>
             </div>
             <div class="slide">
                 <div class="logo-animation" style="margin-top: 20px;"> <img src="partner7.png" alt="" width=70></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 25px;"> <img src="partner8.png" alt="" width=100></div>
+                <div class="logo-animation" style="margin-top: 25px;"> <img src="partner8.png" alt="" width=100></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 22px;"> <img src="partner9.png" alt=""  width=100></div>
+                <div class="logo-animation" style="margin-top: 22px;"> <img src="partner9.png" alt="" width=100></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 15px;"> <img src="partner10.png" alt="" width=75 ></div>
+                <div class="logo-animation" style="margin-top: 15px;"> <img src="partner10.png" alt="" width=75></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 25px;"> <img src="partner11.png" alt="" width=75 ></div>
+                <div class="logo-animation" style="margin-top: 25px;"> <img src="partner11.png" alt="" width=75></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 25px;"> <img src="partner12.png" alt="" width=90 ></div>
+                <div class="logo-animation" style="margin-top: 25px;"> <img src="partner12.png" alt="" width=90></div>
             </div>
             <div class="slide">
                 <div class="logo-animation" style="margin-top: 10px;"> <img src="partner13.png" alt="" width=60></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 18px;"> <img src="partner14.png" alt=""  width=60></div>
+                <div class="logo-animation" style="margin-top: 18px;"> <img src="partner14.png" alt="" width=60></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 24px;"> <img src="partner15.png" alt=""  width=100></div>
+                <div class="logo-animation" style="margin-top: 24px;"> <img src="partner15.png" alt="" width=100></div>
             </div>
             <div class="slide">
                 <div class="logo-animation" style="margin-top: 28px;"> <img src="partner16.png" alt="" width=70></div>
@@ -329,10 +335,10 @@
                 <div class="logo-animation" style="margin-top: 18px;"> <img src="partner19.png" alt="" width=45></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 10px;" > <img src="partner20.png" alt="" width=60></div>
+                <div class="logo-animation" style="margin-top: 10px;"> <img src="partner20.png" alt="" width=60></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 26px;" > <img src="partner21.png" alt="" width=100></div>
+                <div class="logo-animation" style="margin-top: 26px;"> <img src="partner21.png" alt="" width=100></div>
             </div>
             <div class="slide">
                 <div class="logo-animation" style="margin-top: 26px;"> <img src="partner22.png" alt="" width=100></div>
@@ -351,64 +357,75 @@
                 <div class="logo-animation" style="margin-top: 20px;"> <img src="partner2.png" alt="" width=100></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 20px; margin-left: 40px;"> <img src="partner3.png" alt="" width="30"></div>
+                <div class="logo-animation" style="margin-top: 20px; margin-left: 40px;"> <img src="partner3.png" alt=""
+                        width="30"></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 30px;"> <img src="partner4.png" alt="" width="180" ></div>
+                <div class="logo-animation" style="margin-top: 30px;"> <img src="partner4.png" alt="" width="180"></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 10px;"> <img src="partner5.png" alt="" width=80></div>
+                <div class="logo-animation" style="margin-top: 10px;"> <img src="partner5.png" alt="" width=80></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 25px;"> <img src="partner6.png" alt="" width=80></div>
+                <div class="logo-animation" style="margin-top: 25px;"> <img src="partner6.png" alt="" width=80></div>
             </div>
             <div class="slide">
                 <div class="logo-animation" style="margin-top: 20px;"> <img src="partner7.png" alt="" width=70></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 25px;"> <img src="partner8.png" alt="" width=100></div>
+                <div class="logo-animation" style="margin-top: 25px;"> <img src="partner8.png" alt="" width=100></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 22px;"> <img src="partner9.png" alt=""  width=100></div>
+                <div class="logo-animation" style="margin-top: 22px;"> <img src="partner9.png" alt="" width=100></div>
             </div>
             <div class="slide">
-                <div class="logo-animation" style="margin-top: 15px;"> <img src="partner10.png" alt="" width=75 ></div>
+                <div class="logo-animation" style="margin-top: 15px;"> <img src="partner10.png" alt="" width=75></div>
             </div>
             <div class="slide">
                 <div class="logo-animation" style="margin-top: 20px;"> <img src="partner1.png" alt="" width=100></div>
             </div>
             <div class="slide">
-                <div class="logo-animation"  style="margin-top: 30px;"> <img src="partner4.png" alt="" width="180" ></div>
+                <div class="logo-animation" style="margin-top: 30px;"> <img src="partner4.png" alt="" width="180"></div>
             </div>
 
 
         </div>
     </div>
 
-
-
     <div class="footer-menu">
-        
-        <img src="./comunityLogo.png" width="200" class="mobileImages" />
-        <div style="width: 5%;"></div>
 
-        <div style="font-size: 14pt;">Terms of use</div>
-        <div style="font-size: 14pt;"><a href="privacy.html" style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
-        <div style="font-size: 14pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);"> Legal</a></div>
-        <div style="font-size: 14pt;">Pricing</div>
-        <div style="font-size: 14pt;">Licence Terms</div>
-        <div style="font-size: 14pt;">Contact</div>
+        <img src="./comunityLogo.png" width="200" class="mobileImages" />
+        <div style="width: 12%;"></div>
+
+        <div style="font-size: 12pt;"><a href="privacy.html"
+                style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
+        <div style="font-size: 12pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);">
+                Legal</a></div>
+        <div style="font-size: 12pt;">Pricing</div>
+        <div style="font-size: 12pt;">Licence Terms</div>
+        <div style="font-size: 12pt;"><a href="get_started.html" style="text-decoration: none; color: var(--primary-grey);">Contact</a></div>
         <div></div>
         <div></div>
-        <div style="width: 5%;"></div>
-        <div><a href="https://www.linkedin.com/company/comunity/"><img src="/linkedin.svg" width="20" /></a></div>
-        <div><a href="https://www.facebook.com/ComUnityPlatform"> <img src="/facebook.svg" width="20" /></a></div>
-        <div></div>
+        <div style="width: 12%;"></div>
+
+        <div class="social-links">
+            <a href="https://www.linkedin.com/company/comunity/" target="_blank">
+                <img src="/linkedin.svg" width="28" />
+            </a>
+            <a href="https://www.facebook.com/comunity.uk/" target="_blank">
+                <img src="/facebook.svg" width="28" />
+            </a>
+        </div>
+        
+
     </div>
 
-    <footer></footer> 
+    <footer></footer>
 
     <script src="script.js"></script>
+
+
+
 </body>
 
 

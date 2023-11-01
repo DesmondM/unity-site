@@ -1,16 +1,17 @@
 :root{
     --white-color: #fff;
     --black-color:#000000;
-    --primary-grey: #333852;
-    --secondary-grey: #b6bcc1;
-    --tertiary-grey: #D7DADD;
-    --quaternary-grey: #E6E7E8;
-    --comunity-blue: #4798ED;
-    --comunity-green: #59B563;
-    --comunity-orange: #FF5924;
-    --comunity-red: #FF0000;
-    --comunity-light-orange: #FFA61F;
-    --comunity-purple: #6E2463;
+    --primary-grey: rgb(51, 56, 66);
+    --secondary-grey: rgb(182, 188, 193);
+    --tertiary-grey:  rgb(215, 218, 221);
+    --quaternary-grey: rgb(230, 231, 232);
+    --comunity-blue: rgb(71, 152, 237);
+
+    --comunity-green: rgb(89, 181, 99);
+    --comunity-orange: rgb(255, 89, 36);
+    --comunity-red: rgb(255, 0, 0);
+    --comunity-light-orange: rgb(255, 166, 31);
+    --comunity-purple: rgb(110, 36, 99);
     --header-font: 'Comfortaa', sans-serif;
     --font-family: 'Montserrat', sans-serif; /* Define a variable for the font family */
     --header-font-size: 40pt; /* Define a variable for the font size */
@@ -51,6 +52,26 @@ body {
     margin: 0;
     position: relative; /* Add this line */
 }
+
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto; /* Add scrollbars when content doesn't fit */
+  }
+  
+  .content {
+    /* Define a fixed size for your content */
+    width: 800px;
+    height: 600px;
+    border: 1px solid #000; /* Add a border for clarity */
+  }
+  
+
+
 .main {
     display: flex;
     gap: 20px;
@@ -74,6 +95,10 @@ body {
 .main-left{
     width: 65%; 
     margin-top: 100px;
+}
+.main-left-digital-partner{
+    margin-top: 100px;
+    width: 60%
 }
 .main-left2{
     width: 100%; 
@@ -117,7 +142,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     padding: 4px;
-    font-size: 15pt;
+    font-size: 13pt;
     font-weight: 600;
     padding: 0;
 }
@@ -125,6 +150,7 @@ body {
 .topHeader nav li {
    
     margin-right: 20px;
+    white-space: nowrap;
 }
 
 /* Style for unvisited links */
@@ -162,14 +188,14 @@ nav a:visited {
 }
 
 .button{
-    background-color:#333852 ;
+    background-color: var(--primary-grey) ;
     /* border: 1px solid #fff; */
     margin: 10px;
     /* margin-left: 10px; */
     border: none;
     border-radius: 3px;
-    width: 180px;
-    height: 50px;
+    width: 160px;
+    height: 45px;
     font-family: var(--font-family); 
     letter-spacing: var(--kerning);
     font-size: 14pt;
@@ -211,18 +237,24 @@ nav a:visited {
     letter-spacing: var(--subheader-kerning);
     color: #333842;
     margin-top: 0;
-    /* gap: 20px; */
-    
     font-size: 20pt;
     line-height: 1.3;
     justify-content: space-between;
-    /* background-color: #fff; */
-    /* border: 1px solid #ddd; */
     border-radius: 4px;
-    /* margin: 10px 10px 30px 0; */
-    /* max-width:1400px; */
     padding: 10px 0;
     width: 100%;
+    white-space: pre;
+
+}
+/* .subheading::before{
+    content: "\00a0";
+} */
+
+.mountainMan{
+    position: absolute; 
+    top: 10; 
+    right: 0; 
+    z-index: -10;
 }
 
 .flexSection{
@@ -269,6 +301,7 @@ nav a:visited {
     color: #7a858f;
     width: 100%;
     margin: auto; 
+    margin-bottom: 5%;
     letter-spacing: 5px; 
    
 }
@@ -282,9 +315,11 @@ nav a:visited {
     font-size: 12pt;
     line-height: 1.8;
     color: #7a858f;
-    padding: 8%;
-    margin: 20px;
-    margin-top: 0;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 8%;
+    /* margin: 20px;
+    margin-bottom: 60px; */
     /* max-width:1400px; */
     
 }
@@ -350,18 +385,20 @@ nav a:visited {
 }
 .platformCards2 {
     
-     height: 250px;
-     width: 30%;
-     padding: 30px;
+     height: 330px;
+     width: 25%;
+     padding: 20px;
      font-family: var(--header-font);
      color: var(--white-color);
      background-color: var(--primary-grey);
      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
      border-radius: 4px;
-     font-size: 60px;
+     font-size: 95px;
      text-align: center;
      text-transform: uppercase;
     font-weight: 600;
+    letter-spacing: var(--kerning);
+    
 
 }
  
@@ -385,10 +422,13 @@ nav a:visited {
        letter-spacing: 1px;
     line-height: 1.6;
     color: var(--primary-grey);
-    padding: 20px 20px 20px 20px;
+    padding: 30px;
+    text-align: justify;
     /* margin: 0 10px 10px; */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px;
+
 }
+
 
 
 .para-2{
@@ -415,6 +455,13 @@ nav a:visited {
     text-justify: inter-word;
 }
 
+.para3Header{
+    letter-spacing: 1px; 
+    font-size: 15px; 
+    font-weight:600;
+}
+
+
 .technicalPagePara{
     font-family: var(--font-family);
     color: var(--primary-grey);
@@ -423,8 +470,10 @@ nav a:visited {
     line-height: 1.8;
     width: 50%; 
     padding: 0; 
-    padding-right: 20px; 
+    padding-left: 20px; 
 }
+
+
 
 hr{
     border: none;
@@ -442,13 +491,17 @@ hr{
     line-height: 1.8;
     padding: 30px;
     color:  var(--primary-grey); 
-    width: 50%; 
     font-size: 12pt; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
+
+    border-radius: 5px; 
+    width: 40%; 
+    height:fit-content;
 }
 .getStartedListed{
     background-color: #fff;
     border: 1px solid #fff;
+    border-radius: 5px;
     font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
@@ -462,14 +515,27 @@ hr{
 .techNicalListed{
     background-color: #fff;
     border: 1px solid #fff;
+    border-radius: 5px;
     font-family: var(--font-family);
     font-size: 12pt;
     line-height: 1.8;
     padding: 30px;
     color:  var(--primary-grey); 
-    width: 40%; 
+    width: 45%; 
     font-size: 12pt; 
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 6px 6px; 
+}
+.techNicalListedRight{
+    background-color: none;
+    
+    font-family: var(--font-family);
+    font-size: 12pt;
+    line-height: 1.8;
+    padding: 30px;
+    color:  var(--primary-grey); 
+    width: 55%; 
+    font-size: 12pt; 
+   
 }
 
 .cards{
@@ -592,7 +658,6 @@ p{
 
 p span{
     font-family: 'Comfortaa', sans-serif;
-    /* margin: 5px 0; */
     text-align: center;
     color: var(--primary-grey);
     margin:   auto;
@@ -645,10 +710,10 @@ footer::before {
     display: flex;
     justify-content:space-between;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     font-family: var(--font-family);
     font-size: 10px;
-    /* margin-right: 40px; */
+    margin-right: 60px;
     padding: 80px 0px 40px 50px; 
 }
   .footer-menu2 {
@@ -668,7 +733,7 @@ footer::before {
 
 .footer-menu div{
     display: flex;
-    gap: 30px;
+    gap: 10px;
     font-family: var(--font-family);
     font-size: 24px;
     color:  var(--primary-grey);
@@ -798,10 +863,12 @@ footer::before {
     font-size: 24px;
     cursor: pointer;
     display: none;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .sectionTwo{
-    background-image: url('./pebbles2.png'); 
+    background-image: url('./lightBackgrd.png'); 
     background-size: cover; 
     height: 510px;
 }
@@ -822,11 +889,11 @@ footer::before {
     
     display: flex;
     justify-content: left;
-    margin-left: 10px;
-    margin-top: -90px;
+    margin-left: 140px;
+    margin-top: -320px;
     position: relative;
     margin-bottom: 50px;
-    width: 50%;
+    width: 40%;
     z-index: -10;
 }
 .technicalPageBody{
@@ -837,10 +904,11 @@ footer::before {
 .brain{
     float: right; 
     width: 55%;
-    margin: 0px 20px 10px 0; 
-    margin-top: -80px; 
-    margin-right: -20px; 
+    margin: 0px 20px 5px 20px; 
+    margin-top: -195px; 
+    margin-right: -40px; 
     position: relative;
+    z-index: -10;
 }
 .whyUsHeader{
     width: 100%;
@@ -883,123 +951,22 @@ footer::before {
 
 .menuItems{
     margin-right: 50px; 
-    height: 100px; 
     width: 25%;
 }
-/* @media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        background-color: #070707;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        right: 0;
-    }
 
-    .menu.show {
-        display: flex;
-    }
+.social-links a {
+    margin-right: 10px; /* Adjust the margin as needed to reduce the distance */
+    gap: 5px;
+}
 
-    .menu.active {
-        display: block;
-        max-width: 100%;
-        width: auto;
-        background-color: #d7dadd;
-        color: #000000;
-        text-align: right;
-        font-size: 10pt;
-        padding: 30px;
-        z-index: 10;
-        position: relative;
-        transform: translateY(-90px); 
-      }
-      
-      .menu.active::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        padding: 0;
-        left: 0;
-        width: 100%;
-        height: 6px; 
-        background: linear-gradient(to right, #FFA61F 0%, #FFA61F 17%, #FF5924 17%, #FF5924 34%, #FF0000 34%, #FF0000 51%, #6E2463 51%, #6E2463 68%, #4798ED 68%, #4798ED 85%, #59B563 85%, #59B563 100%);
-      }
-      
-      .menu.active:hover {
-        color: white;
-      }
-      
-      
-    .topHeader nav  ul{
-        display: none;
-    }
-    .menu-icon {  
-        display: flex;
-        width: 768px;
-        padding: 10px;
-        justify-content: space-around;
-    }
-    
-    .main{
-        flex-direction: column-reverse;
-        padding: 0;
-    }
-    .main-left{
-        width: 100%;
-        margin-top: 2px;
-    }
-    .heading{
-        padding: 5px;
-        font-size: 24pt;
-        letter-spacing: 6px;
-    }
-    .subheading{
-        font-size: 15pt;
-    }
-    .sectionOne-image{
-        width: 100%;
-    }
-    .flexSection2{
-        flex-direction: column;
-        height: 700px;
-    }
-    .cardItem{
-        flex: 0 0 calc(50% - 20px);
-    }
-    .item {
-        flex: 0 0 calc(50% - 20px); 
-    }
-    p span{
-        font-size: 20pt;
-    }
-    .cardItemCopy{
-        font-size: 18px; 
-    }
-    .sectionTwo{
-        height: 800px;
-    }
-    .platformCards2{
-        margin: auto;
-    }
-    .footer-menu{
-        flex-direction: column;
-    }
-    .platformCards{
-        font-size: 30px;
-        padding: 10px;
-        letter-spacing: 1px;
-    }
-    .platformCardsFirst{
-        font-size: 35px;
-        padding: 10px;
-        letter-spacing: 1px;
-    }
-    .svgStyle{
-        width: 150px;
-        margin-top: 12px;
-    }
-} */
+.partners{
+    font-family: var(--font-family);
+    font-size: 10pt;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+
+
 
 @media (max-width: 768px) {
     body, html {
@@ -1026,14 +993,14 @@ footer::before {
     .menu.active {
         display: block;
         max-width: 100%;
-        width: auto;
-        width:90%;
+        /* width: auto; */
+        width:100%;
         background-color: #d7dadd; /* Change to a readable background color */
         color: var(--primary-grey);
         font-size: 32pt;
         text-align: right;
         font-size: 10pt;
-        padding: 30px;
+        padding: 30px 0;
         z-index: 10;
     }
 
@@ -1105,8 +1072,9 @@ footer::before {
     .flexSection2 {
         flex-direction: column;
         height: 700px;
+        width: 90%;
         margin: auto;
-    margin-right: 25px;
+   
     }
 
     .cardItem {
@@ -1171,8 +1139,8 @@ footer::before {
 
     .svgStyle {
         width: 150px;
-        margin-top: 1px;
-        margin-left: 12%;
+        margin-top: 0;
+        margin-left: 38%;
     }
     .para{
         margin: 0;
@@ -1204,13 +1172,13 @@ footer::before {
     .oneCardItem{
     font-size: 26pt;
     padding: 10px;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
     }
     .fourCardsItem{
     font-size: 16pt;
     padding: 10px;
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
     }
     .businessMain{
@@ -1223,9 +1191,9 @@ footer::before {
         margin: 0;
     }
     .listed{
-        width: 87%;
-        padding-left: 15px;
-        margin: 0;
+        width: 90%;
+       
+        margin: auto;
     }
     .businessGraphic{
         display: flex;
@@ -1297,7 +1265,7 @@ footer::before {
    
 }
 .cardItemWhyUs{
-    height: 300px;
+    height: 310px;
     margin: auto;
     width: 90%;
     letter-spacing: 2px;
@@ -1311,5 +1279,15 @@ footer::before {
     font-size: 14px;
 }
 
-
+.mountainMan{
+    position: relative;
+    width: 100%;
+    
+}
+.main-left-digital-partner{
+    width: 100%;
+}
+.subheading{
+    white-space: normal;
+}
 }

@@ -27,44 +27,45 @@
     <title>Get Started</title>
 </head>
 
-<body >
+<body style=" background-image: url('/backPebbles4.png'); background-repeat: no-repeat; background-size:contain; background-position: top right; " >
 
-<header class="topHeader" style="width: 100%;">
-        <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;" >
-          <img src="comunityLogo.png" alt="logo" width="200">
-      </div>
+    <header class="topHeader" style="width: 100%;">
+        <div class="menu" style="margin-left: 40px; margin-top: 10px;     width: 60%;">
+            <a href="index.html"> <img src="comunityLogo.png" alt="logo" width="200"></a> 
+        </div>
 
-      <div class="navBarItems">
-          <nav>
-              <div class="menu-icon" id="menuIcon" >
-                  <div class="menuItems" ><img src="comunityLogo.png" alt="logo" style="    min-width: 100px;
-                      width: auto;
-                      height: auto;">
-                  </div>
-                  <div class="svgStyle" ><img src="magnifying.png" width="16" />
-                      <span class="getStarted" style="flex: 1;">GET STARTED</span> </div>
-                  <div style="flex: 1; margin-top: 10px; margin-right: 0; display: contents;"> &#9776; </div>
+        <div class="navBarItems">
+            <nav>
+                <div class="menu-icon" id="menuIcon">
+                    <div class="menuItems"><img src="comunityLogo.png" alt="logo" style="    min-width: 100px;
+                        width: auto;
+                        height: auto;">
+                    </div>
+                    <div class="svgStyle"><img src="magnifying.png" width="12" />
+                        <span class="getStarted" style="flex: 1;">SEARCH</span>
+                    </div>
+                    <div style="flex: 1; margin-top: 10px; margin-right: 0; display: contents;"> &#9776; </div>
 
-              </div>
+                </div>
 
-              <ul class="menu" id="menu" 
-              style=" justify-content: space-between;" >
-                  <li ><a href="index.html">Home</a></li>
-                  <li ><a href="business.html">Business </a></li>
-                  <li ><a href="technical.html">Technical</a></li>
-                  <li ><a href="why_us.html">Why Us</a></li>
-                  <li >
-                      <div style="display: flex; flex-direction: row; gap: 5px;" >
-                      <div><img src="/search.svg" width="22" style="margin-top: 3px;" /></div>
-                      <div style=" margin-top: 2px;"> Get Started</div>
-                      </div>
-                  </li>
-              </ul>
+                <ul class="menu" id="menu" style=" justify-content: space-between;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="business.html">Business </a></li>
+                    <li><a href="technical.html">Technical</a></li>
+                    <li><a href="why_us.html">Why Us</a></li>
+                    <li>Get Started</li>
+                    <li>
+                        <div style="display: flex; flex-direction: row; gap: 5px;">
+                            <div style="width: 15px;" ><img src="magnifying.png" width="90" style="margin-top: 6px;" /></div>
+                            <div style=" margin-top: 2px;"><a href="#"> Search</a></div>
+                        </div>
+                    </li>
+                </ul>
 
-          </nav>
-      </div>
+            </nav>
+        </div>
 
-  </header>
+    </header>
 
     <main class="main" >
         <div style="width: 100%; margin-top: 100px;">
@@ -74,46 +75,47 @@
             <div class="getStartedContainer">
            
             <div class="getStartedListed"    >
-               <span style="font-weight: 800; font-family: var(--font-family); letter-spacing: var(--kerning);">CONTACT FORM</span>
+               <!-- <span style="font-weight: 800; font-family: var(--font-family); letter-spacing: var(--kerning);">CONTACT FORM</span> -->
+               <div style="font-weight:bolder; font-size: 18pt; letter-spacing: 3px; font-family: var(--font-family)">CONTACT FORM</div>
                <form style="font-family: var(--font-family);">
-                <label for="formInput" style="font-family: var(--font-family);">Your name (required)</label>
+                <label for="formInput" style="font-family: var(--font-family);">Your name*</label>
                 <input type="text" title="Your name (required)" id="formInput" />
-                <label for="formInput" style="font-family: var(--font-family);">Your email (required)</label>
-                <input type="text" title="Your name (required)" id="formInput" />
-                <label for="formInput" style="font-family: var(--font-family);">Company (required)</label>
-                <input type="text" title="Your name (required)" id="formInput" />
-                <label for="formInput" style="font-family: var(--font-family);">Your role (required)</label>
-                <input type="text" title="Your name (required)" id="formInput" />
-                <label for="formInput" style="font-family: var(--font-family);">Subject (required)</label>
-                <input type="text" title="Your name (required)" id="formInput" />
-                <label for="formInput" style="font-family: var(--font-family);">Your message (required)</label>
+                <label for="formInput" style="font-family: var(--font-family);">Your email*</label>
+                <input type="text" title="Your email (required)" id="formInput" />
+                <label for="formInput" style="font-family: var(--font-family);">Company </label>
+                <input type="text" title="Your company" id="formInput" />
+                <label for="formInput" style="font-family: var(--font-family);">Your role </label>
+                <input type="text" title="Your role (required)" id="formInput" />
+                <label for="formInput" style="font-family: var(--font-family);">Subject</label>
+                <input type="text" title="YSubject (required)" id="formInput" />
+                <label for="formInput" style="font-family: var(--font-family);">Your message*</label>
                 <textarea id="formTextarea" rows="6"></textarea>
                 <button class="button" style="margin: 0; font-family: var(--font-family)">Send</button>
                 
                </form>
             </div>
             
-            <div style="display: flex; flex-direction: column; width: 100%; font-family: var(--font-family)">
+            <div style="display: flex; flex-direction: column; width: 100%; font-family: var(--font-family); margin-top: 35px;">
                 <div style="font-weight:bolder; font-size: 18pt; letter-spacing: 3px; font-family: var(--font-family)">COMPANY DETAILS</div>
                 
-                <div style="display: flex; width: 100%;">
+                <!-- <div style="display: flex; width: 100%;">
                         <div style="width:30px; margin-top: 10px; "><img src="./location.svg" width="15"/></div>
                         
                         <div><div style="margin-top: 10px; font-size: 16pt; font-weight: 500; letter-spacing: 3px; font-family: var(--font-family)">UNITED KINGDOM</div>
                         <div>8 High Street, Brentwood, Essex, CM14 4AB
                             </div>
                         </div>
-                </div>
+                </div> -->
 
-                <div style="display: flex; width: 100%; margin-bottom:15px ;">
+                <!-- <div style="display: flex; width: 100%; margin-bottom:15px ;">
                     <div style="width:30px; margin-top: 10px; "><img src="./phone.svg" width="15"/></div>
                     <div><div style="margin-top: 10px; ">+44 7577 001145</div>
                     </div>
-            </div>
+            </div> -->
 
 
 
-                <div style="display: flex; width: 100%; font-size: 16pt; margin-bottom:15px ;">
+                <!-- <div style="display: flex; width: 100%; font-size: 16pt; margin-bottom:15px ;">
                         <div style="width: 35px; margin-top: 10px;"><img src="./location.svg" width="15"/></div>
                         <div><div style="margin-top: 10px;  font-size: 16pt;  font-weight: 500; letter-spacing: 3px; font-family: var(--font-family);">SOUTH AFRICA</div>
                         <div style="font-size: 16px;">
@@ -122,6 +124,52 @@
                             Randpark Ridge, 2169 
                             
                             </div>
+                        </div>
+                </div> -->
+
+
+                <!-- <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px; margin-top: 10px; "><img src="./phone.svg" width="15"/></div>
+                        <div><div style="margin-top: 10px; font-size: 16px;" >+27 10 553 3163</div>
+                        </div>
+                </div> -->
+                <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px;margin-top: 12px; "><img src="./location.svg" width="15"/></div>
+                        <div><div style="margin-top: 10px;  font-weight: 500; letter-spacing: 3px; font-family: var(--font-family)">UNITED KINGDOM</div>
+                        <div style="font-size: 16px;">8 High Street, Brentwood, Essex, CM14 4AB</div>
+                        </div>
+                </div>
+                <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px; margin-top: 8px; "><img src="./phone.svg" width="15"/></div>
+                        <div><div style="margin-top: 10px; font-size: 16px;" >+44 7577 001145</div>
+                        </div>
+                </div>
+                <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px;margin-top: 12px; "><img src="./location.svg" width="15"/></div>
+                        <div><div style="margin-top: 10px;  font-weight: 500; letter-spacing: 3px; font-family: var(--font-family)">SOUTH AFRICA</div>
+                        <div style="font-size: 16px; line-height: 1.5;">
+                            Eagle Canyon Office Park, Block C, Floor No.1, <br>
+                             Corner Dolfyn Street & Jan Frederick Avenue, <br>
+                            Randpark Ridge, 2169
+                        </div>
+                        </div>
+                </div>
+                <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px; margin-top: 10px; "><img src="./phone.svg" width="15"/></div>
+                        <div><div style="margin-top: 14px; font-size: 16px;" >+27 10 553 3163</div>
+                        </div>
+                </div>
+                <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px;margin-top: 10px; "><img src="./envelope.svg" width="15"/></div>
+                        <div><div style="margin-top: 10px;  font-weight: 500; letter-spacing: 3px; font-family: var(--font-family)">EMAIL</div>
+                        <a href="mailto:info@comunityplatform.com"> <div style="font-size: 16px;">info@comunityplatform.com</div></a>
+                        </div>
+                </div>
+                
+                <!-- <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px;margin-top: 10px; "><img src="./envelope.svg" width="15"/></div>
+                        <div><div style="margin-top: 10px;  font-weight: 500; letter-spacing: 3px; font-family: var(--font-family)">EMAIL</div>
+                        <div style="font-size: 16px;">info@comunityplatform.com</div>
                         </div>
                 </div>
                 <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
@@ -135,6 +183,17 @@
                         <div style="font-size: 16px;">info@comunityplatform.com</div>
                         </div>
                 </div>
+                <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px; margin-top: 10px; "><img src="./phone.svg" width="15"/></div>
+                        <div><div style="margin-top: 10px; font-size: 16px;" >+27 10 553 3163</div>
+                        </div>
+                </div>
+                <div style="display: flex; width: 100%; font-size: 16pt;margin-bottom:15px ;">
+                        <div style="width:30px;margin-top: 10px; "><img src="./envelope.svg" width="15"/></div>
+                        <div><div style="margin-top: 10px;  font-weight: 500; letter-spacing: 3px; font-family: var(--font-family)">EMAIL</div>
+                        <div style="font-size: 16px;">info@comunityplatform.com</div>
+                        </div>
+                </div> -->
 
 
 <!-- <img src="/brain.png" alt="line drawing" width="60%" /> -->
@@ -156,22 +215,31 @@
 </div>
 
 <div class="footer-menu">
-        
-    <img src="./comunityLogo.png" width="200" class="mobileImages" />
-    <div style="width: 5%;"></div>
 
-    <div style="font-size: 14pt;">Terms of use</div>
-    <div style="font-size: 14pt;"><a href="privacy.html" style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
-    <div style="font-size: 14pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);"> Legal</a></div>
-    <div style="font-size: 14pt;">Pricing</div>
-    <div style="font-size: 14pt;">Licence Terms</div>
-    <div style="font-size: 14pt;">Contact</div>
+    <img src="./comunityLogo.png" width="200" class="mobileImages" />
+    <div style="width: 12%;"></div>
+
+    <div style="font-size: 12pt;"><a href="privacy.html"
+            style="text-decoration: none; color: var(--primary-grey);">Privacy</a></div>
+    <div style="font-size: 12pt;"><a href="legal.html" style="text-decoration: none; color: var(--primary-grey);">
+            Legal</a></div>
+    <div style="font-size: 12pt;">Pricing</div>
+    <div style="font-size: 12pt;">Licence Terms</div>
+    <div style="font-size: 12pt;"><a href="get_started.html" style="text-decoration: none; color: var(--primary-grey);">Contact</a></div>
     <div></div>
     <div></div>
-    <div style="width: 5%;"></div>
-    <div><a href="https://www.linkedin.com/company/comunity/"><img src="/linkedin.svg" width="20" /></a></div>
-    <div><a href="https://www.facebook.com/ComUnityPlatform"> <img src="/facebook.svg" width="20" /></a></div>
-    <div></div>
+    <div style="width: 12%;"></div>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/company/comunity/" target="_blank">
+            <img src="/linkedin.svg" width="28" />
+        </a>
+        <a href="https://www.facebook.com/comunity.uk/" target="_blank">
+            <img src="/facebook.svg" width="28" />
+        </a>
+    </div>
+    
+
 </div>
 
 <footer></footer> 
